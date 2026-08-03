@@ -7,11 +7,28 @@
       "file_size": "45.2 MB",
       "commit_hash": "a1b2c3d",
       "download_url": "https://github.com/fairytalefactoryteamemail/tale-forger-manifest/releases/download/v0.1.1/sdk-v0.1.1.zip",
-      "changelog": [
-        "Official VS Code extension support added",
-        "Hover multi-language feature implemented",
-        "Core performance optimizations"
-      ]
+      "changelog": {
+        "en": [
+          "Official VS Code extension support added",
+          "Hover multi-language feature implemented",
+          "Core performance optimizations"
+        ],
+        "fa": [
+          "افزوده شدن پشتیبانی رسمی از افزونه VS Code",
+          "پیاده‌سازی قابلیت چندزبانه برای راهنمای Hover",
+          "بهینه‌سازی‌های اصلی هسته کامپایلر"
+        ],
+        "ru": [
+          "Добавлена официальная поддержка расширения VS Code",
+          "Реализована многоязычная поддержка для Hover",
+          "Основная оптимизация производительности ядра"
+        ],
+        "ja": [
+          "公式VS Code拡張機能のサポートを追加",
+          "Hoverの多言語対応機能を実装",
+          "コアパフォーマンスの最適化"
+        ]
+      }
     },
     {
       "version": "0.1.0",
@@ -20,10 +37,24 @@
       "file_size": "42.0 MB",
       "commit_hash": "e5f6g7h",
       "download_url": "https://github.com/fairytalefactoryteamemail/tale-forger-manifest/releases/download/v0.1.0/sdk-v0.1.0.zip",
-      "changelog": [
-        "Initial SDK Release",
-        "Basic compiler toolchain included"
-      ]
+      "changelog": {
+        "en": [
+          "Initial SDK Release",
+          "Basic compiler toolchain included"
+        ],
+        "fa": [
+          "انتشار اولیه SDK",
+          "شامل ابزارهای پایه کامپایلر"
+        ],
+        "ru": [
+          "Первоначальный релиз SDK",
+          "Включен базовый инструментарий компилятора"
+        ],
+        "ja": [
+          "SDKの初回リリース",
+          " 기본적인コンパイラツールチェーンを同梱"
+        ]
+      }
     }
   ]
 }
