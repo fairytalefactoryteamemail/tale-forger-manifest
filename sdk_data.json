@@ -1,0 +1,33 @@
+{
+  "latest_stable": "0.1.1",
+  "latest_dev": "0.2.0-dev",
+  "sdks": [
+    {
+      "version": "0.1.1",
+      "channel": "Stable",
+      "channel_color": "0xFF06B6D4",
+      "release_date": "2026-07-20",
+      "file_size": "45.2 MB",
+      "commit_hash": "a1b2c3d",
+      "download_url": "https://github.com/.../v0.1.1.zip",
+      "changelog": [
+        "Official VS Code extension support added",
+        "Hover multi-language feature implemented",
+        "Core performance optimizations"
+      ]
+    },
+    {
+      "version": "0.1.0",
+      "channel": "Stable",
+      "channel_color": "0xFF06B6D4",
+      "release_date": "2026-06-15",
+      "file_size": "42.0 MB",
+      "commit_hash": "e5f6g7h",
+      "download_url": "https://github.com/.../v0.1.0.zip",
+      "changelog": [
+        "Initial SDK Release",
+        "Basic compiler toolchain included"
+      ]
+    }
+  ]
+}
