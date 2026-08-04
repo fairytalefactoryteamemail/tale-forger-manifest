@@ -1,0 +1,115 @@
+{
+  "version": "1.0.0",
+  "supported_languages": ["fa", "en", "ru", "ja"],
+  "sections": [
+    {
+      "id": "sec_banner_01",
+      "type": "hero_banner",
+      "data": {
+        "id": "item_banner_01",
+        "saveable": false,
+        "image_url": "assets/images/banners/hero_welcome.png",
+        "title": {
+          "fa": "به TaleForger Hub خوش آمدید",
+          "en": "Welcome to TaleForger Hub",
+          "ru": "Добро пожаловать в TaleForger Hub",
+          "ja": "TaleForger Hubへようこそ"
+        },
+        "subtitle": {
+          "fa": "پلتفرم جامع مدیریت و ساخت روایت‌ها",
+          "en": "Comprehensive narrative management platform",
+          "ru": "Комплексная платформа для управления нарративами",
+          "ja": " 포괄적인 narrative 管理プラットフォーム"
+        },
+        "target_route": "/about"
+      }
+    },
+    {
+      "id": "sec_news_01",
+      "type": "news",
+      "data": {
+        "id": "item_news_101",
+        "saveable": true,
+        "publish_date": "2026-08-04T10:00:00Z",
+        "category": {
+          "fa": "اخبار سیستم",
+          "en": "System News",
+          "ru": "Новости системы",
+          "ja": "システムニュース"
+        },
+        "title": {
+          "fa": "انتشار نسخه جدید موتور TaleForger",
+          "en": "New TaleForger Engine Version Released",
+          "ru": "Выпущена новая версия движка TaleForger",
+          "ja": "TaleForgerエンジンの新バージョンがリリース"
+        },
+        "summary": {
+          "fa": "بهینه‌سازی‌های جدید در پردازش کدهای بایت و سیستم تعاملی.",
+          "en": "New optimizations in bytecode processing and interactive system.",
+          "ru": "Новые оптимизации в обработке байт-кода и интерактивной системе.",
+          "ja": "バイトコード処理とインタラクティブシステムの新しい最適化。"
+        },
+        "image_url": "assets/images/news/engine_update.png"
+      }
+    },
+    {
+      "id": "sec_article_01",
+      "type": "article",
+      "data": {
+        "id": "item_art_201",
+        "saveable": true,
+        "author": "Amir Hossein",
+        "read_time_minutes": 5,
+        "title": {
+          "fa": "معماری کامپایلر و بایتمند سیستم TaleForger",
+          "en": "Compiler and Bytecode Architecture of TaleForger",
+          "ru": "Архитектура компилятора и байт-кода TaleForger",
+          "ja": "TaleForgerのコンパイラとバイトコードアーキテクチャ"
+        },
+        "content": {
+          "fa": "در این مقاله به بررسی نحوه اجرای خط به خط و نگاشت دستورات پرداخته می‌شود...",
+          "en": "In this article, we explore line-by-line execution and instruction mapping...",
+          "ru": "В этой статье мы рассмотрим пошаговое выполнение и отображение инструкций...",
+          "ja": "この記事では、行ごとの実行と命令マッピングについて شرحします..."
+        },
+        "cover_image": "assets/images/articles/architecture.png"
+      }
+    },
+    {
+      "id": "sec_video_01",
+      "type": "video",
+      "data": {
+        "id": "item_vid_301",
+        "saveable": true,
+        "duration_seconds": 340,
+        "video_url": "https://assets.example.com/videos/demo.mp4",
+        "thumbnail_url": "assets/images/videos/thumb_demo.png",
+        "title": {
+          "fa": "پیش‌نمایش قابلیت‌های جدید ویرایشگر visual",
+          "en": "Preview of New Visual Editor Features",
+          "ru": "Предварительный просмотр новых функций визуального редактора",
+          "ja": "新しいビジュアルエディタ機能のプレビュー"
+        }
+      }
+    },
+    {
+      "id": "sec_gallery_01",
+      "type": "photo_gallery",
+      "data": {
+        "id": "item_gal_401",
+        "saveable": true,
+        "title": {
+          "fa": "گالری طرح‌های концепت",
+          "en": "Concept Art Gallery",
+          "ru": "Галерея концепт-артов",
+          "ja": "コンセプトアートギャラリー"
+        },
+        "images": [
+          "assets/images/gallery/concept_01.png",
+          "assets/images/gallery/concept_02.png",
+          "assets/images/gallery/concept_03.png"
+        ]
+      }
+    }
+  ]
+}
