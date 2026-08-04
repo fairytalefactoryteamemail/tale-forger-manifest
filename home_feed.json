@@ -8,18 +8,19 @@
       "data": {
         "id": "item_banner_01",
         "saveable": false,
-        "image_url": "assets/images/banners/hero_welcome.png",
+        "publish_date": "2026-08-04T12:00:00Z",
+        "image_url": "https://raw.githubusercontent.com/username/repository/main/media/banners/hero_welcome.png",
         "title": {
-          "fa": "به TaleForger Hub خوش آمدید",
-          "en": "Welcome to TaleForger Hub",
-          "ru": "Добро пожаловать в TaleForger Hub",
-          "ja": "TaleForger Hubへようこそ"
+          "fa": "به ForgeHub خوش آمدید",
+          "en": "Welcome to ForgeHub",
+          "ru": "Добро пожаловать в ForgeHub",
+          "ja": "ForgeHubへようこそ"
         },
         "subtitle": {
           "fa": "پلتفرم جامع مدیریت و ساخت روایت‌ها",
           "en": "Comprehensive narrative management platform",
           "ru": "Комплексная платформа для управления нарративами",
-          "ja": " 포괄적인 narrative 管理プラットフォーム"
+          "ja": "포괄적인 narrative 管理プラットフォーム"
         },
         "target_route": "/about"
       }
@@ -46,10 +47,10 @@
         "summary": {
           "fa": "بهینه‌سازی‌های جدید در پردازش کدهای بایت و سیستم تعاملی.",
           "en": "New optimizations in bytecode processing and interactive system.",
-          "ru": "Новые оптимизации в обработке байт-кода и интерактивной системе.",
+          "ru": "Новые оптимизации в обработке байت-кода и интерактивной системе.",
           "ja": "バイトコード処理とインタラクティブシステムの新しい最適化。"
         },
-        "image_url": "assets/images/news/engine_update.png"
+        "image_url": "https://raw.githubusercontent.com/username/repository/main/media/news/engine_update.png"
       }
     },
     {
@@ -58,6 +59,7 @@
       "data": {
         "id": "item_art_201",
         "saveable": true,
+        "publish_date": "2026-08-03T18:30:00Z",
         "author": "Amir Hossein",
         "read_time_minutes": 5,
         "title": {
@@ -66,13 +68,13 @@
           "ru": "Архитектура компилятора и байт-кода TaleForger",
           "ja": "TaleForgerのコンパイラとバイトコードアーキテクチャ"
         },
-        "content": {
+        "summary": {
           "fa": "در این مقاله به بررسی نحوه اجرای خط به خط و نگاشت دستورات پرداخته می‌شود...",
           "en": "In this article, we explore line-by-line execution and instruction mapping...",
           "ru": "В этой статье мы рассмотрим пошаговое выполнение и отображение инструкций...",
           "ja": "この記事では、行ごとの実行と命令マッピングについて شرحします..."
         },
-        "cover_image": "assets/images/articles/architecture.png"
+        "image_url": "https://raw.githubusercontent.com/username/repository/main/media/articles/architecture.png"
       }
     },
     {
@@ -81,9 +83,10 @@
       "data": {
         "id": "item_vid_301",
         "saveable": true,
+        "publish_date": "2026-08-02T14:15:00Z",
         "duration_seconds": 340,
-        "video_url": "https://assets.example.com/videos/demo.mp4",
-        "thumbnail_url": "assets/images/videos/thumb_demo.png",
+        "video_url": "https://raw.githubusercontent.com/username/repository/main/media/videos/demo.mp4",
+        "image_url": "https://raw.githubusercontent.com/username/repository/main/media/videos/thumb_demo.png",
         "title": {
           "fa": "پیش‌نمایش قابلیت‌های جدید ویرایشگر visual",
           "en": "Preview of New Visual Editor Features",
@@ -98,16 +101,17 @@
       "data": {
         "id": "item_gal_401",
         "saveable": true,
+        "publish_date": "2026-08-01T09:00:00Z",
         "title": {
-          "fa": "گالری طرح‌های концепت",
+          "fa": "گالری طرح‌های مفهوم",
           "en": "Concept Art Gallery",
           "ru": "Галерея концепт-артов",
           "ja": "コンセプトアートギャラリー"
         },
         "images": [
-          "assets/images/gallery/concept_01.png",
-          "assets/images/gallery/concept_02.png",
-          "assets/images/gallery/concept_03.png"
+          "https://raw.githubusercontent.com/username/repository/main/media/gallery/concept_01.png",
+          "https://raw.githubusercontent.com/username/repository/main/media/gallery/concept_02.png",
+          "https://raw.githubusercontent.com/username/repository/main/media/gallery/concept_03.png"
         ]
       }
     }
