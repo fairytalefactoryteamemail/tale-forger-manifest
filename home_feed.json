@@ -20,7 +20,7 @@
           "fa": "پلتفرم جامع مدیریت و ساخت روایت‌ها",
           "en": "Comprehensive narrative management platform",
           "ru": "Комплексная платформа для управления нарративами",
-          "ja": "포괄적인 narrative 管理プラットフォーム"
+          "ja": "包括的なナラティブ管理プラットフォーム"
         },
         "target_route": "/about"
       }
@@ -39,42 +39,258 @@
           "ja": "システムニュース"
         },
         "title": {
-          "fa": "انتشار نسخه جدید موتور TaleForger",
-          "en": "New TaleForger Engine Version Released",
-          "ru": "Выпущена новая версия движка TaleForger",
-          "ja": "TaleForgerエンジンの新バージョンがリリース"
+          "fa": "انتشار نسخه ۱.۰ موتور TaleForger",
+          "en": "TaleForger 1.0 Released",
+          "ru": "Выпущена версия 1.0 TaleForger",
+          "ja": "TaleForger 1.0 リリース"
         },
         "summary": {
-          "fa": "بهینه‌سازی‌های جدید در پردازش کدهای بایت و سیستم تعاملی.",
-          "en": "New optimizations in bytecode processing and interactive system.",
-          "ru": "Новые оптимизации в обработке байت-кода и интерактивной системе.",
-          "ja": "バイトコード処理とインタラクティブシステムの新しい最適化。"
+          "fa": "موتور TaleForger با پشتیبانی کامل از ۴ زبان طبیعی و افزونهٔ VS Code منتشر شد. اکنون می‌توانید به فارسی، روسی، ژاپنی یا انگلیسی کد بزنید و آن را به‌طور زنده ترجمه کنید.",
+          "en": "TaleForger engine with full support for 4 natural languages and a VS Code extension is out. You can now code in Persian, Russian, Japanese or English and translate it live.",
+          "ru": "Движок TaleForger с полной поддержкой 4 языков и расширением для VS Code выпущен. Теперь можно писать код на персидском, русском, японском или английском и переводить его на лету.",
+          "ja": "4つの自然言語を完全サポートし、VS Code拡張も備えたTaleForgerエンジンがリリースされました。ペルシャ語、ロシア語、日本語、英語でコードを記述し、その場で翻訳できます。"
         },
-        "image_url": "https://raw.githubusercontent.com/username/repository/main/media/news/engine_update.png"
+        "image_url": "https://raw.githubusercontent.com/username/repository/main/media/news/engine_v1.png"
       }
     },
     {
-      "id": "sec_article_01",
+      "id": "sec_getting_started_01",
       "type": "article",
       "data": {
-        "id": "item_art_201",
+        "id": "item_art_why",
         "saveable": true,
-        "publish_date": "2026-08-03T18:30:00Z",
+        "publish_date": "2026-08-03T14:00:00Z",
+        "author": "Amir Hossein",
+        "read_time_minutes": 4,
+        "title": {
+          "fa": "چرا TaleForger؟",
+          "en": "Why TaleForger?",
+          "ru": "Почему TaleForger?",
+          "ja": "なぜTaleForgerなのか？"
+        },
+        "summary": {
+          "fa": "TaleForger زبانی است که با سینتکس دوگانه (C و Python)، اشکال‌زدایی دقیق، و پشتیبانی از چندین زبان انسانی، برنامه‌نویسی را برای همه آسان می‌کند. دیگر لازم نیست بین خوانایی و قدرت یکی را انتخاب کنید.\n\n```c\n// سبک C\nif (x > 5) {\n    print(\"بزرگتر\");\n}\n\n// سبک Python\nif x > 5: {\n    print(\"بزرگتر\");\n}\n```",
+          "en": "TaleForger combines dual syntax (C & Python), precise debugging, and multi‑language support to make programming accessible to everyone. No need to choose between readability and power.\n\n```c\n// C style\nif (x > 5) {\n    print(\"greater\");\n}\n\n// Python style\nif x > 5: {\n    print(\"greater\");\n}\n```",
+          "ru": "TaleForger объединяет двойной синтаксис (C и Python), точную отладку и многоязычную поддержку, делая программирование доступным для всех. Больше не нужно выбирать между читаемостью и мощностью.\n\n```c\n// стиль C\nif (x > 5) {\n    print(\"больше\");\n}\n\n// стиль Python\nif x > 5: {\n    print(\"больше\");\n}\n```",
+          "ja": "TaleForgerは、CとPythonの両方の構文、正確なデバッグ、多言語サポートを組み合わせ、誰でもプログラミングを利用できるようにします。可読性とパワーを両立。\n\n```c\n// Cスタイル\nif (x > 5) {\n    print(\"大きい\");\n}\n\n// Pythonスタイル\nif x > 5: {\n    print(\"大きい\");\n}\n```"
+        },
+        "image_url": "https://raw.githubusercontent.com/username/repository/main/media/articles/why_taleforger.png"
+      }
+    },
+    {
+      "id": "sec_getting_started_02",
+      "type": "article",
+      "data": {
+        "id": "item_art_first_program",
+        "saveable": true,
+        "publish_date": "2026-08-03T15:00:00Z",
+        "author": "Amir Hossein",
+        "read_time_minutes": 6,
+        "title": {
+          "fa": "نخستین برنامهٔ شما",
+          "en": "Your First Program",
+          "ru": "Ваша первая программа",
+          "ja": "最初のプログラム"
+        },
+        "summary": {
+          "fa": "با چند خط کد ساده شروع کنید. در این مقاله انواع پایه، متغیرها و توابع درون‌ساخت `print` و `length` را یاد می‌گیرید.\n\n```c\nint age = 25;\nstring name = \"Ali\";\nprint(\"سلام \" + name + \"! سن: \" + age);\nprint(\"طول نام: \" + length(name));\n```\n\n*(تصویر: خروجی کد در ترمینال با هایلایت فارسی)*",
+          "en": "Start with a few simple lines. Learn basic types, variables, and built‑in functions `print` and `length`.\n\n```c\nint age = 25;\nstring name = \"Ali\";\nprint(\"Hello \" + name + \"! Age: \" + age);\nprint(\"Name length: \" + length(name));\n```\n\n*(Image: terminal output with English highlighting)*",
+          "ru": "Начните с нескольких простых строк. Изучите базовые типы, переменные и встроенные функции `print` и `length`.\n\n```c\nint age = 25;\nstring name = \"Ali\";\nprint(\"Привет \" + name + \"! Возраст: \" + age);\nprint(\"Длина имени: \" + length(name));\n```\n\n*(Изображение: вывод терминала с русской подсветкой)*",
+          "ja": "数行のコードから始めましょう。基本型、変数、組み込み関数 `print` と `length` を学びます。\n\n```c\nint age = 25;\nstring name = \"Ali\";\nprint(\"こんにちは \" + name + \"！ 年齢: \" + age);\nprint(\"名前の長さ: \" + length(name));\n```\n\n*(画像: 日本語ハイライト付きの端末出力)*"
+        },
+        "image_url": "https://raw.githubusercontent.com/username/repository/main/media/articles/first_program.png"
+      }
+    },
+    {
+      "id": "sec_getting_started_03",
+      "type": "article",
+      "data": {
+        "id": "item_art_install",
+        "saveable": true,
+        "publish_date": "2026-08-02T12:00:00Z",
+        "author": "Amir Hossein",
+        "read_time_minutes": 3,
+        "title": {
+          "fa": "نصب و راه‌اندازی",
+          "en": "Installation & Setup",
+          "ru": "Установка и настройка",
+          "ja": "インストールとセットアップ"
+        },
+        "summary": {
+          "fa": "۱. نصب .NET 9.0 SDK  \n۲. دانلود و نصب افزونهٔ Taleforger از VS Code Marketplace  \n۳. ایجاد فایل `.tafo` و زدن دکمهٔ Run\n\nهمه چیز آماده است!",
+          "en": "1. Install .NET 9.0 SDK  \n2. Download the Taleforger extension from VS Code Marketplace  \n3. Create a `.tafo` file and hit Run\n\nThat's it!",
+          "ru": "1. Установите .NET 9.0 SDK  \n2. Скачайте расширение Taleforger из VS Code Marketplace  \n3. Создайте файл `.tafo` и нажмите Run\n\nГотово!",
+          "ja": "1. .NET 9.0 SDK をインストール  \n2. VS Code Marketplace から Taleforger 拡張機能をダウンロード  \n3. `.tafo` ファイルを作成し、Run をクリック\n\n以上です！"
+        },
+        "image_url": "https://raw.githubusercontent.com/username/repository/main/media/articles/install.png"
+      }
+    },
+    {
+      "id": "sec_tutorial_01",
+      "type": "article",
+      "data": {
+        "id": "item_art_control_flow",
+        "saveable": true,
+        "publish_date": "2026-08-01T16:00:00Z",
+        "author": "Amir Hossein",
+        "read_time_minutes": 8,
+        "title": {
+          "fa": "کنترل جریان: if، while و for",
+          "en": "Control Flow: if, while, and for",
+          "ru": "Управление потоком: if, while и for",
+          "ja": "制御フロー: if, while, for"
+        },
+        "summary": {
+          "fa": "با ساختارهای شرطی و حلقه‌ها آشنا شوید. هر دو سبک C و Python پشتیبانی می‌شوند. حلقهٔ `for` با گام هوشمند:\n\n```c\nfor (int i = 10; i > 0;) {\n    print(i);   // چاپ 10,9,...,1\n}\n```\n\n*(تصویر: فلوچارت ساده از یک حلقه)*",
+          "en": "Get to know conditionals and loops. Both C and Python styles are supported. The `for` loop with smart step:\n\n```c\nfor (int i = 10; i > 0;) {\n    print(i);   // prints 10,9,...,1\n}\n```\n\n*(Image: simple flowchart of a loop)*",
+          "ru": "Познакомьтесь с условными операторами и циклами. Поддерживаются оба стиля: C и Python. Цикл `for` с умным шагом:\n\n```c\nfor (int i = 10; i > 0;) {\n    print(i);   // выводит 10,9,...,1\n}\n```\n\n*(Изображение: простая блок‑схема цикла)*",
+          "ja": "条件分岐とループを学びます。C と Python の両方のスタイルがサポートされています。スマートステップ付きの `for` ループ:\n\n```c\nfor (int i = 10; i > 0;) {\n    print(i);   // 10,9,...,1 を出力\n}\n```\n\n*(画像: ループの簡単なフローチャート)*"
+        },
+        "image_url": "https://raw.githubusercontent.com/username/repository/main/media/articles/control_flow.png"
+      }
+    },
+    {
+      "id": "sec_tutorial_02",
+      "type": "article",
+      "data": {
+        "id": "item_art_oop",
+        "saveable": true,
+        "publish_date": "2026-07-31T10:00:00Z",
+        "author": "Amir Hossein",
+        "read_time_minutes": 10,
+        "title": {
+          "fa": "برنامه‌نویسی شیءگرا در Taleforger",
+          "en": "Object‑Oriented Programming in Taleforger",
+          "ru": "Объектно‑ориентированное программирование в Taleforger",
+          "ja": "TaleForger でのオブジェクト指向プログラミング"
+        },
+        "summary": {
+          "fa": "کلاس‌ها، فیلدها و متدها را تعریف کنید. از `this` برای دسترسی به اعضای نمونه استفاده کنید.\n\n```c\nclass Person {\n    string name;\n    func greet() -> string {\n        return \"سلام \" + this.name;\n    }\n}\nPerson p = Person();\np.name = \"Ali\";\nprint(p.greet());\n```\n\n*(تصویر: دیاگرام کلاس Person)*",
+          "en": "Define classes, fields, and methods. Use `this` to access instance members.\n\n```c\nclass Person {\n    string name;\n    func greet() -> string {\n        return \"Hello \" + this.name;\n    }\n}\nPerson p = Person();\np.name = \"Ali\";\nprint(p.greet());\n```\n\n*(Image: class diagram of Person)*",
+          "ru": "Определяйте классы, поля и методы. Используйте `this` для доступа к членам экземпляра.\n\n```c\nclass Person {\n    string name;\n    func greet() -> string {\n        return \"Привет \" + this.name;\n    }\n}\nPerson p = Person();\np.name = \"Ali\";\nprint(p.greet());\n```\n\n*(Изображение: диаграмма класса Person)*",
+          "ja": "クラス、フィールド、メソッドを定義します。`this` でインスタンスメンバーにアクセスします。\n\n```c\nclass Person {\n    string name;\n    func greet() -> string {\n        return \"こんにちは \" + this.name;\n    }\n}\nPerson p = Person();\np.name = \"Ali\";\nprint(p.greet());\n```\n\n*(画像: Person クラスの図)*"
+        },
+        "image_url": "https://raw.githubusercontent.com/username/repository/main/media/articles/oop.png"
+      }
+    },
+    {
+      "id": "sec_tutorial_03",
+      "type": "article",
+      "data": {
+        "id": "item_art_collections",
+        "saveable": true,
+        "publish_date": "2026-07-30T09:00:00Z",
+        "author": "Amir Hossein",
+        "read_time_minutes": 7,
+        "title": {
+          "fa": "کار با لیست‌ها و دیکشنری‌ها",
+          "en": "Working with Lists and Dictionaries",
+          "ru": "Работа со списками и словарями",
+          "ja": "リストと辞書の操作"
+        },
+        "summary": {
+          "fa": "لیست‌ها (list) و دیکشنری‌ها (dict) را با اندیس‌گذاری و الحاق مدیریت کنید.\n\n```c\nlist fruits = [\"سیب\", \"موز\"];\nfruits = fruits + [\"انگور\"];\ndict person = {\"name\": \"سارا\", \"age\": 30};\nprint(fruits[0]);          // سیب\nprint(person[\"name\"]);     // سارا\n```\n\n*(تصویر: یک جدول داده به‌عنوان دیکشنری)*",
+          "en": "Manage lists and dictionaries with indexing and concatenation.\n\n```c\nlist fruits = [\"apple\", \"banana\"];\nfruits = fruits + [\"grape\"];\ndict person = {\"name\": \"Sara\", \"age\": 30};\nprint(fruits[0]);          // apple\nprint(person[\"name\"]);     // Sara\n```\n\n*(Image: a data table representing a dictionary)*",
+          "ru": "Управляйте списками и словарями с помощью индексации и объединения.\n\n```c\nlist fruits = [\"яблоко\", \"банан\"];\nfruits = fruits + [\"виноград\"];\ndict person = {\"name\": \"Сара\", \"age\": 30};\nprint(fruits[0]);          // яблоко\nprint(person[\"name\"]);     // Сара\n```\n\n*(Изображение: таблица данных в виде словаря)*",
+          "ja": "リストと辞書をインデックスと連結で操作します。\n\n```c\nlist fruits = [\"りんご\", \"バナナ\"];\nfruits = fruits + [\"ぶどう\"];\ndict person = {\"name\": \"サラ\", \"age\": 30};\nprint(fruits[0]);          // りんご\nprint(person[\"name\"]);     // サラ\n```\n\n*(画像: 辞書を表すデータテーブル)*"
+        },
+        "image_url": "https://raw.githubusercontent.com/username/repository/main/media/articles/collections.png"
+      }
+    },
+    {
+      "id": "sec_multilang_01",
+      "type": "article",
+      "data": {
+        "id": "item_art_native_lang",
+        "saveable": true,
+        "publish_date": "2026-07-29T08:00:00Z",
+        "author": "Amir Hossein",
+        "read_time_minutes": 6,
+        "title": {
+          "fa": "برنامه‌نویسی به زبان مادری",
+          "en": "Programming in Your Native Language",
+          "ru": "Программирование на родном языке",
+          "ja": "母国語でのプログラミング"
+        },
+        "summary": {
+          "fa": "با Taleforger می‌توانید از کلمات کلیدی به زبان خود استفاده کنید. تمام aliasها در هسته ثبت شده‌اند و به‌صورت زنده ترجمه می‌شوند.\n\n```c\nاگر (x > 5) {\n    چاپ(\"بزرگتر\");\n}\n```\n\n*(تصویر: کد فارسی در VS Code با هاور چندزبانه)*",
+          "en": "With Taleforger you can use keywords in your own language. All aliases are registered in the core and can be live‑translated.\n\n```c\nif (x > 5) {\n    print(\"greater\");\n}\n```\n\n*(Image: English code in VS Code with multi‑language hover)*",
+          "ru": "С Taleforger вы можете использовать ключевые слова на своём родном языке. Все псевдонимы зарегистрированы в ядре и могут переводиться на лету.\n\n```c\nесли (x > 5) {\n    печать(\"больше\");\n}\n```\n\n*(Изображение: русский код в VS Code с многоязычной подсказкой)*",
+          "ja": "TaleForger では、自分の母国語でキーワードを使えます。すべての別名がコアに登録されており、その場で翻訳できます。\n\n```c\nもし (x > 5) {\n    表示(\"大きい\");\n}\n```\n\n*(画像: VS Code 上の日本語コードと多言語ホバー)*"
+        },
+        "image_url": "https://raw.githubusercontent.com/username/repository/main/media/articles/native_lang.png"
+      }
+    },
+    {
+      "id": "sec_multilang_02",
+      "type": "article",
+      "data": {
+        "id": "item_art_live_translation",
+        "saveable": true,
+        "publish_date": "2026-07-28T07:00:00Z",
+        "author": "Amir Hossein",
+        "read_time_minutes": 4,
+        "title": {
+          "fa": "ترجمهٔ زندهٔ کد در VS Code",
+          "en": "Live Code Translation in VS Code",
+          "ru": "Перевод кода на лету в VS Code",
+          "ja": "VS Code でのリアルタイムコード翻訳"
+        },
+        "summary": {
+          "fa": "افزونهٔ Taleforger با تغییر زبان در پنل، تمام کلمات کلیدی فایل جاری را فوراً به زبان مقصد ترجمه می‌کند. بدون نیاز به کامپایل مجدد.\n\n*(تصویر: انیمیشن تغییر زبان از انگلیسی به فارسی و برعکس)*",
+          "en": "The Taleforger extension instantly translates all keywords in the current file when you switch the language in the panel. No recompilation needed.\n\n*(Image: animation switching language from English to Persian and back)*",
+          "ru": "Расширение Taleforger мгновенно переводит все ключевые слова в текущем файле при смене языка в панели. Перекомпиляция не требуется.\n\n*(Изображение: анимация переключения языка с английского на персидский и обратно)*",
+          "ja": "Taleforger 拡張機能は、パネルで言語を切り替えると、現在のファイル内のすべてのキーワードを即座に翻訳します。再コンパイル不要。\n\n*(画像: 英語からペルシャ語に切り替えるアニメーション)*"
+        },
+        "image_url": "https://raw.githubusercontent.com/username/repository/main/media/articles/live_translation.png"
+      }
+    },
+    {
+      "id": "sec_benefits_01",
+      "type": "article",
+      "data": {
+        "id": "item_art_why_multilang",
+        "saveable": true,
+        "publish_date": "2026-07-27T06:00:00Z",
         "author": "Amir Hossein",
         "read_time_minutes": 5,
         "title": {
-          "fa": "معماری کامپایلر و بایتمند سیستم TaleForger",
-          "en": "Compiler and Bytecode Architecture of TaleForger",
-          "ru": "Архитектура компилятора и байт-кода TaleForger",
-          "ja": "TaleForgerのコンパイラとバイトコードアーキテクチャ"
+          "fa": "مزایای یک زبان برنامه‌نویسی چندملیتی",
+          "en": "Benefits of a Multilingual Programming Language",
+          "ru": "Преимущества многоязычного языка программирования",
+          "ja": "多言語プログラミング言語の利点"
         },
         "summary": {
-          "fa": "در این مقاله به بررسی نحوه اجرای خط به خط و نگاشت دستورات پرداخته می‌شود...",
-          "en": "In this article, we explore line-by-line execution and instruction mapping...",
-          "ru": "В этой статье мы рассмотрим пошаговое выполнение и отображение инструкций...",
-          "ja": "この記事では、行ごとの実行と命令マッピングについて شرحします..."
+          "fa": "۱. **کاهش ترس از کدنویسی** برای غیرانگلیسی‌زبانان  \n۲. **یادگیری سریع‌تر** با مفاهیم آشنا به زبان خود  \n۳. **همکاری بین‌المللی** بدون گم‌شدن در ترجمه  \n۴. **حفظ فرهنگ‌های محلی** در عصر دیجیتال\n\nTaleForger با ارائهٔ aliasهای غنی، برنامه‌نویسی را برای همهٔ جهان باز می‌کند.",
+          "en": "1. **Reduces coding anxiety** for non‑English speakers  \n2. **Faster learning** through familiar native concepts  \n3. **International collaboration** without translation barriers  \n4. **Preserves local cultures** in the digital era\n\nTaleForger opens programming to the whole world with its rich alias system.",
+          "ru": "1. **Снижает страх перед кодом** для неанглоязычных  \n2. **Быстрое обучение** через знакомые понятия на родном языке  \n3. **Международное сотрудничество** без языковых барьеров  \n4. **Сохранение местных культур** в цифровую эпоху\n\nTaleForger открывает программирование для всего мира благодаря богатой системе псевдонимов.",
+          "ja": "1. 非英語話者の **コーディングへの不安を軽減**  \n2. 母国語の馴染みある概念で **学習が高速化**  \n3. **国際的な共同作業** を翻訳障壁なく  \n4. デジタル時代における **地域文化の保存**\n\nTaleForger は、豊富な別名システムで全世界にプログラミングを開放します。"
         },
-        "image_url": "https://raw.githubusercontent.com/username/repository/main/media/articles/architecture.png"
+        "image_url": "https://raw.githubusercontent.com/username/repository/main/media/articles/why_multilang.png"
+      }
+    },
+    {
+      "id": "sec_contribute_01",
+      "type": "article",
+      "data": {
+        "id": "item_art_add_language",
+        "saveable": true,
+        "publish_date": "2026-07-26T05:00:00Z",
+        "author": "Amir Hossein",
+        "read_time_minutes": 3,
+        "title": {
+          "fa": "چگونه زبان خود را به Taleforger اضافه کنید",
+          "en": "How to Add Your Language to Taleforger",
+          "ru": "Как добавить свой язык в Taleforger",
+          "ja": "あなたの言語を Taleforger に追加する方法"
+        },
+        "summary": {
+          "fa": "شما می‌توانید زبان مادری خود را به مجموعهٔ Taleforger اضافه کنید! کافی است یک درخواست (issue) در [ریپوی GitHub](https://github.com/taleforger/taleforger) باز کنید یا ایمیلی به `amirmashhori81@gmail.com` بفرستید. تیم ما aliasهای لازم را ایجاد و در نسخهٔ بعدی منتشر خواهد کرد.",
+          "en": "You can add your native language to Taleforger! Just open an issue on the [GitHub repository](https://github.com/taleforger/taleforger) or send an email to `amirmashhori81@gmail.com`. Our team will create the necessary aliases and publish them in the next release.",
+          "ru": "Вы можете добавить свой родной язык в Taleforger! Просто создайте issue в [репозитории GitHub](https://github.com/taleforger/taleforger) или отправьте письмо на `amirmashhori81@gmail.com`. Наша команда создаст необходимые псевдонимы и опубликует их в следующем выпуске.",
+          "ja": "あなたの母国語を Taleforger に追加できます！[GitHub リポジトリ](https://github.com/taleforger/taleforger) で issue を作成するか、`amirmashhori81@gmail.com` にメールしてください。私たちのチームが必要な別名を作成し、次のリリースで公開します。"
+        },
+        "image_url": "https://raw.githubusercontent.com/username/repository/main/media/articles/add_language.png"
       }
     },
     {
@@ -88,10 +304,10 @@
         "video_url": "https://raw.githubusercontent.com/username/repository/main/media/videos/demo.mp4",
         "image_url": "https://raw.githubusercontent.com/username/repository/main/media/videos/thumb_demo.png",
         "title": {
-          "fa": "پیش‌نمایش قابلیت‌های جدید ویرایشگر visual",
-          "en": "Preview of New Visual Editor Features",
-          "ru": "Предварительный просмотр новых функций визуального редактора",
-          "ja": "新しいビジュアルエディタ機能のプレビュー"
+          "fa": "پیش‌نمایش قابلیت‌های ویرایشگر Taleforger",
+          "en": "Preview of Taleforger Editor Features",
+          "ru": "Обзор возможностей редактора Taleforger",
+          "ja": "Taleforger エディタ機能のプレビュー"
         }
       }
     },
@@ -103,15 +319,15 @@
         "saveable": true,
         "publish_date": "2026-08-01T09:00:00Z",
         "title": {
-          "fa": "گالری طرح‌های مفهوم",
-          "en": "Concept Art Gallery",
-          "ru": "Галерея концепт-артов",
-          "ja": "コンセプトアートギャラリー"
+          "fa": "گالری کدنویسی چندزبانه",
+          "en": "Multilingual Coding Gallery",
+          "ru": "Галерея многоязычного кода",
+          "ja": "多言語コーディングギャラリー"
         },
         "images": [
-          "https://raw.githubusercontent.com/username/repository/main/media/gallery/concept_01.png",
-          "https://raw.githubusercontent.com/username/repository/main/media/gallery/concept_02.png",
-          "https://raw.githubusercontent.com/username/repository/main/media/gallery/concept_03.png"
+          "https://raw.githubusercontent.com/username/repository/main/media/gallery/fa_code.png",
+          "https://raw.githubusercontent.com/username/repository/main/media/gallery/ru_code.png",
+          "https://raw.githubusercontent.com/username/repository/main/media/gallery/ja_code.png"
         ]
       }
     }
