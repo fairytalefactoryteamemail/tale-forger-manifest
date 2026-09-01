@@ -29,32 +29,6 @@
           "コアパフォーマンスの最適化"
         ]
       }
-    },
-    {
-      "version": "0.1.0",
-      "channel": "stable",
-      "release_date": "2026-06-15",
-      "file_size": "42.0 MB",
-      "commit_hash": "e5f6g7h",
-      "download_url": "https://github.com/fairytalefactoryteamemail/tale-forger-manifest/releases/download/v0.1.0/sdk-v0.1.0.zip",
-      "changelog": {
-        "en": [
-          "Initial SDK Release",
-          "Basic compiler toolchain included"
-        ],
-        "fa": [
-          "انتشار اولیه SDK",
-          "شامل ابزارهای پایه کامپایلر"
-        ],
-        "ru": [
-          "Первоначальный релиз SDK",
-          "Включен базовый инструментарий компилятора"
-        ],
-        "ja": [
-          "SDKの初回リリース",
-          " 기본적인コンパイラツールチェーンを同梱"
-        ]
-      }
     }
   ]
 }
