@@ -6,7 +6,8 @@
       "release_date": "2026-07-20",
       "file_size": "45.2 MB",
       "commit_hash": "a1b2c3d",
-      "download_url": "https://github.com/fairytalefactoryteamemail/tale-forger-manifest/releases/download/v0.1.1/sdk-v0.1.1.zip",
+      "sha256": "55b949f8287bda54005137173963f21498a0c1461fab0c06117f4b36e4c84275",
+      "download_url": "https://github.com/fairytalefactoryteamemail/tale-forger-manifest/releases/download/MVP/Tale.Forger.MVP.installer.zip",
       "changelog": {
         "en": [
           "Official VS Code extension support added",
