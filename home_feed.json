@@ -2,30 +2,30 @@
   "version": "1.0.0",
   "supported_languages": ["fa", "en", "ru", "ja"],
   "sections": [
-    {
-      "id": "sec_getting_started_00",
-      "type": "article",
-      "data": {
-        "id": "item_art_hello_world",
-        "saveable": true,
-        "publish_date": "2026-08-04T13:00:00Z",
-        "author": "Amir Hossein",
-        "read_time_minutes": 2,
-        "title": {
-          "fa": "برنامه «سلام دنیا» به زبان‌های مختلف",
-          "en": "Hello World in Multiple Languages",
-          "ru": "Программа «Привет, мир!» на разных языках",
-          "ja": " multilingual 「Hello World」プログラム"
-        },
-        "summary": {
-          "fa": "ساده‌ترین برنامه در TaleForger! می‌توانید متناسب با زبان دلخواه خود از کلمات کلیدی مختلف استفاده کنید:\n\n```c\n// انگلیسی\nprint(\"سلام دنیا!\");\n\n// فارسی\nچاپ(\"سلام دنیا!\");\n\n// روسی\nпечать(\"سلام دنیا!\");\n\n// ژاپنی\n表示(\"سلام دنیا!\");\n```",
-          "en": "The simplest program in TaleForger! You can use keywords in your preferred language:\n\n```c\n// English\nprint(\"Hello World!\");\n\n// Persian\nچاپ(\"Hello World!\");\n\n// Russian\nпечать(\"Hello World!\");\n\n// Japanese\n表示(\"Hello World!\");\n```",
-          "ru": "Самая простая программа в TaleForger! Вы можете использовать ключевые слова на удобном для вас языке:\n\n```c\n// Английский\nprint(\"Привет, мир!\");\n\n// Персидский\nچاپ(\"Привет, мир!\");\n\n// Русский\nпечать(\"Привет, мир!\");\n\n// Японский\n表示(\"Привет, мир!\");\n```",
-          "ja": "TaleForgerで最もシンプルなプログラム！お好みの言語でキーワードを使用できます：\n\n```c\n// 英語\nprint(\"こんにちは世界！\");\n\n// ペルシャ語\nچاپ(\"こんにちは世界！\");\n\n// ロシア語\nпечать(\"こんにちは世界！\");\n\n// 日本語\n表示(\"こんにちは世界！\");\n```"
-        },
-        "image_url": "https://raw.githubusercontent.com/username/repository/main/media/articles/hello_world.png"
-      }
+   {
+  "id": "sec_getting_started_00",
+  "type": "article",
+  "data": {
+    "id": "item_art_hello_world",
+    "saveable": true,
+    "publish_date": "2026-08-04T13:00:00Z",
+    "author": "Amir Hossein",
+    "read_time_minutes": 2,
+    "title": {
+      "fa": "برنامه «سلام دنیا» به زبان‌های مختلف",
+      "en": "Hello World in Multiple Languages",
+      "ru": "Программа «Привет, мир!» на разных языках",
+      "ja": "multilingual 「Hello World」プログラム"
     },
+    "summary": {
+      "fa": "ساده‌ترین برنامه در TaleForger! می‌توانید متناسب با زبان دلخواه خود از کلمات کلیدی مختلف استفاده کنید:\n\n```tafo\n// انگلیسی\nprint(\"سلام دنیا!\");\n\n// فارسی\nچاپ(\"سلام دنیا!\");\n\n// روسی\nпечать(\"سلام دنیا!\");\n\n// ژاپنی\n表示(\"سلام دنیا!\");\n```",
+      "en": "The simplest program in TaleForger! You can use keywords in your preferred language:\n\n```tafo\n// English\nprint(\"Hello World!\");\n\n// Persian\nچاپ(\"Hello World!\");\n\n// Russian\nпечать(\"Hello World!\");\n\n// Japanese\n表示(\"Hello World!\");\n```",
+      "ru": "Самая простая программа в TaleForger! Вы можете использовать ключевые слова на удобном для вас языке:\n\n```tafo\n// Английский\nprint(\"Привет, мир!\");\n\n// Персидский\nچاپ(\"Привет, мир!\");\n\n// Русский\nпечать(\"Привет, мир!\");\n\n// Японский\n表示(\"Привет, мир!\");\n```",
+      "ja": "TaleForgerで最もシンプルなプログラム！お好みの言語でキーワードを使用できます：\n\n```tafo\n// 英語\nprint(\"こんにちは世界！\");\n\n// ペルシャ語\nچاپ(\"こんにちは世界！\");\n\n// ロシア語\nпечать(\"こんにちは世界！\");\n\n// 日本語\n表示(\"こんにちは世界！\");\n```"
+    },
+    "image_url": "https://raw.githubusercontent.com/username/repository/main/media/articles/hello_world.png"
+  }
+},
     {
       "id": "sec_banner_01",
       "type": "hero_banner",
