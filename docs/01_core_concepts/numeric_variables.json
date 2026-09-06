@@ -1,0 +1,29 @@
+{
+  "topic_id": "numeric_variables",
+  "sdk_version": "0.4.2",
+  "min_sdk_version": "mvp",
+  "background_family": {
+    "fa": "خانواده C / پایتون",
+    "en": "C-Family / Python",
+    "ru": "C-подобные / Python",
+    "ja": "C言語系 / Python"
+  },
+  "title": {
+    "fa": "متغیرهای عددی: اعداد صحیح و اعشاری",
+    "en": "Numeric Variables: Integers & Floating-Point Numbers",
+    "ru": "Числовые переменные: Целые числа и числа с плавающей точкой",
+    "ja": "数値変数：整数と浮動小数点数"
+  },
+  "content": {
+    "fa": {
+      "sections": [
+        {
+          "heading": "۱. تعریف متغیرهای صحیح و اعشاری",
+          "text": "در سیستم تایپینگ، اعداد صحیح با int و اعداد اعشاری با float مشخص می‌شوند.",
+          "code_c_style": "```c\nint score = 100;\nfloat price = 19.99;\nprint(\"امتیاز: \" + score);\n```",
+          "code_python_style": "```python\nscore = 100\nprice = 19.99\nprint(\"امتیاز: \" + str(score))\n```"
+        }
+      ]
+    }
+  }
+}
