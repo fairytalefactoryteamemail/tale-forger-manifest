@@ -1,0 +1,107 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "id": "control_flow_if",
+  "since_version": "0.4.1",
+  "level": "intermediate",
+  "family": "i_c",
+  "core": "control_flow",
+  "type": "if_else",
+  "title": {
+    "fa": "ساختار شرطی if و else (ترکیب سینتکس C و Python)",
+    "en": "If-Else Conditional Control (C & Python Syntax Hybrid)",
+    "ja": "If-Else 条件制御 (C および Python 構文ハイブリッド)",
+    "ru": "Условный оператор If-Else (гибридный синтаксис C и Python)"
+  },
+  "quick_tips": {
+    "fa": [
+      "پشتیبانی از هر دو سینتکس C با پرانتز `if (condition)` و Python با کولون `if condition:`.",
+      "بلوک شرطی را می‌توان با بلوک `{}` یا تک‌دستوری بدون بلوک تعریف کرد.",
+      "تولید کد یکسان در موتور اجرا صرف‌نظر از سبک نگارش انتخاب‌شده.",
+      "امکان ترکیب شرط‌ها با عملگرهای منطقی `&&` و `||`.",
+      "پشتیبانی کامل از ساختارهای تودرتو و `else if`."
+    ],
+    "en": [
+      "Supports C-style parenthesis `if (condition)` and Python-style colon `if condition:`.",
+      "Conditional blocks accept multi-statement `{}` or single-statement syntax.",
+      "Identical execution behavior across all syntax variations.",
+      "Logical operators `&&` and `||` can be freely combined in expressions.",
+      "Full support for nested blocks and `else if` chains."
+    ],
+    "ja": [
+      "Cスタイル括弧 `if (condition)` と Pythonスタイルコロン `if condition:` の両方をサポート。",
+      "条件ブロックは複数文 `{}` または単一文構文を受け入れます。",
+      "すべての構文バリエーションで同一の実行動作。",
+      "論理演算子 `&&` と `||` を式内で自由に組み合わせ可能。",
+      "ネストされたブロックと `else if` チェーンの完全サポート。"
+    ],
+    "ru": [
+      "Поддерживает C-стиль с скобками `if (condition)` и Python-стиль с двоеточием `if condition:`.",
+      "Условные блоки принимают многострочный `{}` или однострочный синтаксис.",
+      "Идентичное поведение выполнения для всех вариантов синтаксиса.",
+      "Логические операторы `&&` и `||` можно свободно комбинировать в выражениях.",
+      "Полная поддержка вложенных блоков и цепочек `else if`."
+    ]
+  },
+  "prerequisites": [
+    "core_variables"
+  ],
+  "content": [
+    {
+      "type": "text",
+      "value": {
+        "fa": "پیاده‌سازی شرط به سبک C (استفاده از پرانتز برای شرط)",
+        "en": "C-style conditional implementation (using parenthesis around condition)",
+        "ja": "Cスタイルの条件実装 (条件の周りに括弧を使用)",
+        "ru": "Реализация условий в стиле C (использование скобок вокруг условия)"
+      }
+    },
+    {
+      "type": "code",
+      "lang": "taleforger",
+      "value": "```taleforger\nint a = 10;\nint b = 5;\n\nif (a > b) {\n    print(\"a بزرگتر از b است (سبک C)\");}\n```",
+
+      "output": "a بزرگتر از b است (سبک C)"
+    },
+    {
+      "type": "text",
+      "value": {
+        "fa": "پیاده‌سازی همان شرط به سبک Python (استفاده از : بعد از شرط)",
+        "en": "Same conditional logic written in Python style (using colon : after condition)",
+        "ja": "Pythonスタイルで書かれた同じ条件ロジック (条件の後にコロン : を使用)",
+        "ru": "Та же условная логика, написанная в стиле Python (использование двоеточия : после условия)"
+      }
+    },
+    {
+      "type": "code",
+      "lang": "taleforger",
+      "value": "```taleforger\nif a > b: {\n    print(\"a بزرگتر از b است (سبک Python)\");}\n```",
+
+      "output": "a بزرگتر از b است (سبک Python)"
+    },
+    {
+      "type": "text",
+      "value": {
+        "fa": "ساختار چندشرطی else if با شرط‌های منطقی پیچیده",
+        "en": "Chained else-if structure with logical condition evaluation",
+        "ja": "論理条件評価を伴うチェーン化された else-if 構造",
+        "ru": "Цепочечная структура else-if с оценкой логических условий"
+      }
+    },
+    {
+      "type": "code",
+      "lang": "taleforger",
+      "value": "```taleforger\nint score = 75;\nif (score >= 90) {\n    print(\"عالی\");\n} else if score >= 70: {\n    print(\"خوب\");\n} else {\n    print(\"نیاز به تلاش بیشتر\");\n}\n```",
+      "output": "خوب"
+    },
+    {
+      "type": "note",
+      "style": "warning",
+      "value": {
+        "fa": "می‌توانید سبک‌ها را ترکیب کنید، اما جهت خوانایی بهتر کد در پروژه یک دست بنویسید.",
+        "en": "You can mix styles, but maintaining consistency across a project is recommended.",
+        "ja": "スタイルを混在させることができますが、プロジェクト内で一貫性を保つことをお勧めします。",
+        "ru": "Вы можете смешивать стили, но для meilleure читаемости кода рекомендуется соблюдать единообразие."
+      }
+    }
+  ]
+}
