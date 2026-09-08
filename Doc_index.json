@@ -6,7 +6,7 @@
   "documents": [
     {
       "id": "core_variables",
-      "url": "https://raw.githubusercontent.com/taleforger/tale-forger-manifest/main/docs/core/variables/int.json",
+      "url": "https://raw.githubusercontent.com/fairytalefactoryteamemail/tale-forger-manifest/refs/heads/main/docs/core/variables/int.json",
       "since_version": "0.4.0",
       "level": "beginner",
       "family": "i_c",
