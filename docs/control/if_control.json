@@ -1,11 +1,13 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "id": "control_flow_if",
-  "since_version": "0.4.1",
   "level": "intermediate",
   "family": "i_c",
   "core": "control_flow",
-  "type": "if_else",
+  "type": "if_else", 
+   "min_version": "0.1.0",
+  "max_version": "0.1.0", 
+  
   "title": {
     "fa": "ساختار شرطی if و else (ترکیب سینتکس C و Python)",
     "en": "If-Else Conditional Control (C & Python Syntax Hybrid)",

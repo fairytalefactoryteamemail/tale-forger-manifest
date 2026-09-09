@@ -1,11 +1,12 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "id": "core_variables",
-  "since_version": "0.4.0",
   "level": "beginner",
   "family": "i_c",
   "core": "variable",
   "type": "primitives",
+  "min_version": "0.1.0",
+  "max_version": "0.1.0", 
   "title": {
     "fa": "تعریف متغیرها و انواع داده پایه",
     "en": "Variable Declarations & Primitive Types",
@@ -26,20 +27,6 @@
       "Variables are explicitly typed upon declaration.",
       "Strings seamlessly concatenate with other types via the + operator.",
       "Standard arithmetic is supported across compatible numeric types."
-    ],
-    "ja": [
-      "int、float、string、bool、sci_decimalの5つの基本型をサポート。",
-      "sci_decimalは高精度な小数計算（19桁精度）に使用されます。",
-      "変数は宣言時に明示的な型指定が必要です。",
-      "+ 演算子を使用して文字列を他の型と結合できます。",
-      "互換性のある数値型間で標準的な算術演算がサポートされます。"
-    ],
-    "ru": [
-      "Поддержка 5 базовых типов: int, float, string, bool и sci_decimal.",
-      "sci_decimal используется для высокоточных вычислений с плавающей запятой (19 знаков).",
-      "Переменные имеют явную типизацию при объявлении.",
-      "Строки объединяются с другими типами с помощью оператора +.",
-      "Стандартная арифметика поддерживается для всех совместимых числовых типов."
     ]
   },
   "prerequisites": [],
@@ -48,30 +35,26 @@
       "type": "text",
       "value": {
         "fa": "تعریف متغیرهای پایه شامل int، float، string، bool و دقیق sci_decimal",
-        "en": "Declaring primitive variables including int, float, string, bool, and precise sci_decimal",
-        "ja": "int、float、string、bool、高精度sci_decimalを含む基本変数の宣言",
-        "ru": "Объявление базовых переменных, включая int, float, string, bool и точный sci_decimal"
+        "en": "Declaring primitive variables including int, float, string, bool, and precise sci_decimal"
       }
     },
     {
       "type": "code",
       "lang": "taleforger",
-      "value": "```taleforger\nint age = 25;\nfloat pi = 3.14;\nstring name = \"Ali\";\nbool isDev = true;\nsci_decimal precise = 1.234567890123456789;\n```",
+      "value": "int age = 25;\nfloat pi = 3.14;\nstring name = \"Ali\";\nbool isDev = true;\nsci_decimal precise = 1.234567890123456789;",
       "output": null
     },
     {
       "type": "text",
       "value": {
         "fa": "محاسبات ریاضی و اتصال متغیرها به رشته و چاپ خروجی",
-        "en": "Mathematical operations, string concatenation, and printing results",
-        "ja": "数学的演算、文字列結合、および結果の出力",
-        "ru": "Математические операции, конкатенация строк и вывод результатов"
+        "en": "Mathematical operations, string concatenation, and printing results"
       }
     },
     {
       "type": "code",
       "lang": "taleforger",
-      "value": "```taleforger\nint doubleAge = age * 2;\nfloat circleArea = pi * 7 * 7;\nstring greeting = \"سلام \" + name + \"!\";\nbool canVote = age >= 18;\n\nprint(greeting);\nprint(\"سن: \" + age);\nprint(\"مساحت دایره: \" + circleArea);\nprint(\"می‌تونه رأی بده؟ \" + canVote);\nprint(\"int دقیق: \" + precise);\n```",
+      "value": "int doubleAge = age * 2;\nfloat circleArea = pi * 7 * 7;\nstring greeting = \"سلام \" + name + \"!\";\nbool canVote = age >= 18;\n\nprint(greeting);\nprint(\"سن: \" + age);\nprint(\"مساحت دایره: \" + circleArea);\nprint(\"می‌تونه رأی بده؟ \" + canVote);\nprint(\"int دقیق: \" + precise);",
       "output": "سلام Ali!\nسن: 25\nمساحت دایره: 153.86\nمی‌تونه رأی بده؟ true\nint دقیق: 1.234567890123456789"
     },
     {
@@ -79,9 +62,7 @@
       "style": "info",
       "value": {
         "fa": "برای محاسبات مالی یا علمی بسیار دقیق حتماً از نوع sci_decimal استفاده کنید.",
-        "en": "Always use sci_decimal for high-precision financial or scientific calculations.",
-        "ja": "高精度な財務または科学計算には、常にsci_decimalを使用してください。",
-        "ru": "Всегда используйте sci_decimal для высокоточных финансовых или научных вычислений."
+        "en": "Always use sci_decimal for high-precision financial or scientific calculations."
       }
     },
     {
@@ -89,9 +70,7 @@
       "url": "https://raw.githubusercontent.com/taleforger/docs/main/assets/primitive_types.png",
       "alt": {
         "fa": "نمودار حافظه انواع متغیر پایه",
-        "en": "Memory allocation graph for primitive types",
-        "ja": "基本型のメモリ割り当てグラフ",
-        "ru": "График распределения памяти для примитивных типов"
+        "en": "Memory allocation graph for primitive types"
       }
     }
   ]
