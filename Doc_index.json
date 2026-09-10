@@ -1,13 +1,25 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
-  "version": "0.4.2",
   "engine_name": "Tale Forger",
   "repository": "https://github.com/taleforger/tale-forger-manifest",
   "documents": [
     {
       "id": "core_variables",
       "url": "https://raw.githubusercontent.com/fairytalefactoryteamemail/tale-forger-manifest/refs/heads/main/docs/core/variables/int.json",
-      "since_version": "0.4.0",
+      "level": "beginner",
+      "family": "i_c",
+      "core": "variable",
+      "type": "primitive_types",
+      "title": {
+        "fa": "متغیرهای پایه و انواع داده",
+        "en": "Base Variables & Primitive Types",
+        "ja": "基本変数とプリミティブ型",
+        "ru": "Базовые переменные и примитивные типы"
+      }
+    },
+     {
+      "id": "core",
+      "url": "https://raw.githubusercontent.com/fairytalefactoryteamemail/tale-forger-manifest/refs/heads/main/docs/core/variables/int.json",
       "level": "beginner",
       "family": "i_c",
       "core": "variable",
