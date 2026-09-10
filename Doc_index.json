@@ -2,7 +2,6 @@
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "engine_name": "Tale Forger",
   "repository": "https://github.com/taleforger/tale-forger-manifest",
-  "version": "0.1.0",
   "documents": [
     {
       "id": "core_variables",
