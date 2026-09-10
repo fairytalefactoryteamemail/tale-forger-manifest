@@ -36,33 +36,49 @@
         {
           "type": "text",
           "value": {
-            "fa": "تعریف متغیرهای پایه شامل int، float، string، bool و دقیق sci_decimal",
-            "en": "Declaring primitive variables including int, float, string, bool, and precise sci_decimal"
+            "fa": "تعریف متغیرهای پایه شامل عدد_صحیح، عدد_اعشاری، متن، منطقی و دقیق sci_decimal",
+            "en": "Declaring primitive variables including int, float, string, bool, and precise sci_decimal",
+            "ja": "整数、浮動小数点、文字列、論理型、高精度 sci_decimal の基本変数の宣言",
+            "ru": "Объявление базовых переменных, включая целые, вещественные, строки, логические и sci_decimal"
           }
         },
         {
           "type": "code",
           "lang": "taleforger",
-          "value": "int age = 25;\nfloat pi = 3.14;\nstring name = \"Ali\";\nbool isDev = true;\nsci_decimal precise = 1.234567890123456789;"
+          "value": {
+            "fa": "عدد_صحیح سن = 25;\nعدد_اعشاری پی = 3.14;\nمتن نام = \"علی\";\nمنطقی توسعه_دهنده = درست;\nsci_decimal دقیق = 1.234567890123456789;",
+            "en": "int age = 25;\nfloat pi = 3.14;\nstring name = \"Ali\";\nbool isDev = true;\nsci_decimal precise = 1.234567890123456789;",
+            "ja": "整数 age = 25;\n浮動小数点 pi = 3.14;\n文字列 name = \"Ali\";\n論理型 isDev = 真;\nsci_decimal precise = 1.234567890123456789;",
+            "ru": "целое age = 25;\nдробное pi = 3.14;\nстрока name = \"Ali\";\nбулево isDev = истина;\nsci_decimal precise = 1.234567890123456789;"
+          }
         },
         {
           "type": "text",
           "value": {
             "fa": "محاسبات ریاضی و اتصال متغیرها به رشته و چاپ خروجی",
-            "en": "Mathematical operations, string concatenation, and printing results"
+            "en": "Mathematical operations, string concatenation, and printing results",
+            "ja": "数学演算、文字列結合、結果の出力",
+            "ru": "Математические операции, конкатенация строк и вывод результатов"
           }
         },
         {
           "type": "code",
           "lang": "taleforger",
-          "value": "int doubleAge = age * 2;\nstring greeting = \"سلام \" + name + \"!\";\n\nprint(greeting);\nprint(\"سن: \" + age);\nprint(\"int دقیق: \" + precise);"
+          "value": {
+            "fa": "عدد_صحیح دوبرابر_سن = سن * 2;\nمتن پیام = \"سلام \" + نام + \"!\";\n\nچاپ(پیام);\nچاپ(\"سن: \" + سن);\nچاپ(\"دقیق: \" + دقیق);",
+            "en": "int doubleAge = age * 2;\nstring greeting = \"Hello \" + name + \"!\";\n\nprint(greeting);\nprint(\"Age: \" + age);\nprint(\"Precise: \" + precise);",
+            "ja": "整数 doubleAge = age * 2;\n文字列 greeting = \"こんにちは \" + name + \"!\";\n\n表示(greeting);\n表示(\"年齢: \" + age);\n表示(\"高精度: \" + precise);",
+            "ru": "целое doubleAge = age * 2;\nстрока greeting = \"Привет \" + name + \"!\";\n\nпечать(greeting);\nпечать(\"Возраст: \" + age);\nпечать(\"Точное: \" + precise);"
+          }
         },
         {
           "type": "note",
           "style": "info",
           "value": {
             "fa": "برای محاسبات مالی یا علمی بسیار دقیق حتماً از نوع sci_decimal استفاده کنید.",
-            "en": "Always use sci_decimal for high-precision financial or scientific calculations."
+            "en": "Always use sci_decimal for high-precision financial or scientific calculations.",
+            "ja": "高精度の財務計算や科学計算には、必ず sci_decimal 型を使用してください。",
+            "ru": "Всегда используйте тип sci_decimal для высокоточных финансовых или научных расчетов."
           }
         }
       ]
@@ -75,14 +91,14 @@
       "min_version": "0.2.0",
       "max_version": "0.9.0",
       "title": {
-        "fa": "تعریف متغیرها، استنتاج نوع (var) و String Interpolation",
+        "fa": "تعریف متغیرها، استنتاج نوع (متغیر) و String Interpolation",
         "en": "Variables, Type Inference (var) & String Interpolation",
         "ja": "変数、型推論 (var)、文字列補間",
         "ru": "Переменные, выведение типов (var) и интерполяция строк"
       },
       "quick_tips": {
         "fa": [
-          "پشتیبانی از کلیدواژه var برای استنتاج خودکار نوع متغیر.",
+          "پشتیبانی از کلیدواژه متغیر برای استنتاج خودکار نوع متغیر.",
           "قابلیت درون‌یابی رشته‌ها با علامت $ (String Interpolation) به جای +.",
           "حفظ کامل پشتیبانی از نوع دقیق sci_decimal."
         ],
@@ -97,33 +113,49 @@
         {
           "type": "text",
           "value": {
-            "fa": "تعریف متغیرها با کلیدواژه var و تعیین خودکار نوع توسط کامپایلر",
-            "en": "Declaring variables using 'var' keyword with auto type inference"
+            "fa": "تعریف متغیرها با کلیدواژه متغیر و تعیین خودکار نوع توسط کامپایلر",
+            "en": "Declaring variables using 'var' keyword with auto type inference",
+            "ja": "型推論キーワードを使用した変数の宣言",
+            "ru": "Объявление переменных с помощью ключевого слова с автоопределением типа"
           }
         },
         {
           "type": "code",
           "lang": "taleforger",
-          "value": "var age = 26;\nvar name = \"Sajjad\";\nvar score = 98.5;\nsci_decimal precise = 2.718281828459045235;"
+          "value": {
+            "fa": "متغیر سن = 26;\nمتغیر نام = \"سجاد\";\nمتغیر امتیاز = 98.5;\nsci_decimal دقیق = 2.718281828459045235;",
+            "en": "var age = 26;\nvar name = \"Sajjad\";\nvar score = 98.5;\nsci_decimal precise = 2.718281828459045235;",
+            "ja": "変数 age = 26;\n変数 name = \"Sajjad\";\n変数 score = 98.5;\nsci_decimal precise = 2.718281828459045235;",
+            "ru": "переменная age = 26;\nпеременная name = \"Sajjad\";\nпеременная score = 98.5;\nsci_decimal precise = 2.718281828459045235;"
+          }
         },
         {
           "type": "text",
           "value": {
             "fa": "استفاده از String Interpolation جهت چاپ خروجی تمیزتر",
-            "en": "Using String Interpolation for cleaner output formatting"
+            "en": "Using String Interpolation for cleaner output formatting",
+            "ja": "よりクリーンな出力のための文字列補間の使用",
+            "ru": "Использование интерполяции строк для более чистого вывода"
           }
         },
         {
           "type": "code",
           "lang": "taleforger",
-          "value": "print(\"سلام $name، سن شما $age سال است.\");\nprint(\"ثابت e با دقت بالا: $precise\");"
+          "value": {
+            "fa": "چاپ(\"سلام $نام، سن شما $سن سال است.\");\nچاپ(\"ثابت e با دقت بالا: $دقیق\");",
+            "en": "print(\"Hello $name, your age is $age.\");\nprint(\"High precision e constant: $precise\");",
+            "ja": "表示(\"こんにちは $name、あなたの年齢は $age 歳です。\");\n表示(\"高精度 e 定数: $precise\");",
+            "ru": "печать(\"Привет $name, твой возраст $age.\");\nпечать(\"Точная константа e: $precise\");"
+          }
         },
         {
           "type": "note",
           "style": "warning",
           "value": {
-            "fa": "کلیدواژه var نوع متغیر را در زمان کامپایل قفل می‌کند و امکان تغییر نوع در ادامه وجود ندارد.",
-            "en": "The 'var' keyword locks the type at compile-time and cannot be re-assigned to another type."
+            "fa": "کلیدواژه متغیر نوع آن را در زمان کامپایل قفل می‌کند و امکان تغییر نوع در ادامه وجود ندارد.",
+            "en": "The 'var' keyword locks the type at compile-time and cannot be re-assigned to another type.",
+            "ja": "型推論キーワードはコンパイル時に型を locks するため、後から型を変更することはできません。",
+            "ru": "Ключевое слово фиксирует тип во время компиляции, и его нельзя изменить позже."
           }
         }
       ]
