@@ -60,9 +60,8 @@
     {
       "type": "code",
       "lang": "taleforger",
-      "value": "```taleforger\nint a = 10;\nint b = 5;\n\nif (a > b) {\n    print(\"a بزرگتر از b است (سبک C)\");}\n```",
+      "value": "```taleforger\nint a = 10;\nint b = 5;\n\nif (a > b) {\n    print(\"a بزرگتر از b است (سبک C)\");}\n```"
 
-      "output": "a بزرگتر از b است (سبک C)"
     },
     {
       "type": "text",
@@ -76,9 +75,8 @@
     {
       "type": "code",
       "lang": "taleforger",
-      "value": "```taleforger\nif a > b: {\n    print(\"a بزرگتر از b است (سبک Python)\");}\n```",
+      "value": "```taleforger\nif a > b: {\n    print(\"a بزرگتر از b است (سبک Python)\");}\n```"
 
-      "output": "a بزرگتر از b است (سبک Python)"
     },
     {
       "type": "text",
@@ -92,8 +90,7 @@
     {
       "type": "code",
       "lang": "taleforger",
-      "value": "```taleforger\nint score = 75;\nif (score >= 90) {\n    print(\"عالی\");\n} else if score >= 70: {\n    print(\"خوب\");\n} else {\n    print(\"نیاز به تلاش بیشتر\");\n}\n```",
-      "output": "خوب"
+      "value": "```taleforger\nint score = 75;\nif (score >= 90) {\n    print(\"عالی\");\n} else if score >= 70: {\n    print(\"خوب\");\n} else {\n    print(\"نیاز به تلاش بیشتر\");\n}\n```"
     },
     {
       "type": "note",

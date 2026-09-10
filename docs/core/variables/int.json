@@ -43,8 +43,7 @@
         {
           "type": "code",
           "lang": "taleforger",
-          "value": "int age = 25;\nfloat pi = 3.14;\nstring name = \"Ali\";\nbool isDev = true;\nsci_decimal precise = 1.234567890123456789;",
-          "output": null
+          "value": "int age = 25;\nfloat pi = 3.14;\nstring name = \"Ali\";\nbool isDev = true;\nsci_decimal precise = 1.234567890123456789;"
         },
         {
           "type": "text",
@@ -56,8 +55,7 @@
         {
           "type": "code",
           "lang": "taleforger",
-          "value": "int doubleAge = age * 2;\nstring greeting = \"سلام \" + name + \"!\";\n\nprint(greeting);\nprint(\"سن: \" + age);\nprint(\"int دقیق: \" + precise);",
-          "output": "سلام Ali!\nسن: 25\nint دقیق: 1.234567890123456789"
+          "value": "int doubleAge = age * 2;\nstring greeting = \"سلام \" + name + \"!\";\n\nprint(greeting);\nprint(\"سن: \" + age);\nprint(\"int دقیق: \" + precise);"
         },
         {
           "type": "note",
@@ -106,8 +104,7 @@
         {
           "type": "code",
           "lang": "taleforger",
-          "value": "var age = 26;\nvar name = \"Sajjad\";\nvar score = 98.5;\nsci_decimal precise = 2.718281828459045235;",
-          "output": null
+          "value": "var age = 26;\nvar name = \"Sajjad\";\nvar score = 98.5;\nsci_decimal precise = 2.718281828459045235;"
         },
         {
           "type": "text",
@@ -119,8 +116,7 @@
         {
           "type": "code",
           "lang": "taleforger",
-          "value": "print(\"سلام $name، سن شما $age سال است.\");\nprint(\"ثابت e با دقت بالا: $precise\");",
-          "output": "سلام Sajjad، سن شما 26 سال است.\nثابت e با دقت بالا: 2.718281828459045235"
+          "value": "print(\"سلام $name، سن شما $age سال است.\");\nprint(\"ثابت e با دقت بالا: $precise\");"
         },
         {
           "type": "note",
