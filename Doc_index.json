@@ -10,29 +10,39 @@
       "family": "i_c",
       "core": "variable",
       "type": "primitive_types",
-        "version": "0.1.0",
-
+      "version": "0.1.0",
       "title": {
         "fa": "متغیرهای پایه و انواع داده",
         "en": "Base Variables & Primitive Types",
         "ja": "基本変数とプリミティブ型",
         "ru": "Базовые переменные и примитивные типы"
+      },
+      "description": {
+        "fa": "آشنایی با متغیرهای عددی، رشته‌ای و انواع داده‌های اولیه در زبان داستان‌ساز.",
+        "en": "Introduction to numeric, string, and basic primitive data types in Tale Forger.",
+        "ja": "Tale Forgerにおける数値、文字列、基本的なプリミティブデータ型の紹介。",
+        "ru": "Знакомство с числовыми, строковыми и базовыми примитивными типами данных в Tale Forger."
       }
     },
-     {
+    {
       "id": "core",
       "url": "https://raw.githubusercontent.com/fairytalefactoryteamemail/tale-forger-manifest/refs/heads/main/docs/core/variables/int.json",
       "level": "beginner",
       "family": "i_c",
       "core": "variable",
       "type": "primitive_types",
-        "version": "0.1.0",
-
+      "version": "0.1.0",
       "title": {
         "fa": "متغیرهای پایه و انواع داده",
         "en": "Base Variables & Primitive Types",
         "ja": "基本変数とプリミティブ型",
         "ru": "Базовые переменные и примитивные типы"
+      },
+      "description": {
+        "fa": "مفاهیم اساسی تعریف متغیرها و نحوه مدیریت داده‌های اولیه.",
+        "en": "Core concepts of variable declaration and handling primitive data.",
+        "ja": "変数宣言とプリミティブ data の取り扱いの core な概念。",
+        "ru": "Основные концепции объявления переменных и работы с примитивными данными."
       }
     }
   ]
