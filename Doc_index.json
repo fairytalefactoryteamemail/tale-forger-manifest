@@ -11,6 +11,8 @@
       "family": "i_c",
       "core": "variable",
       "type": "primitive_types",
+        "version": "0.1.0",
+
       "title": {
         "fa": "متغیرهای پایه و انواع داده",
         "en": "Base Variables & Primitive Types",
@@ -25,6 +27,8 @@
       "family": "i_c",
       "core": "variable",
       "type": "primitive_types",
+        "version": "0.1.0",
+
       "title": {
         "fa": "متغیرهای پایه و انواع داده",
         "en": "Base Variables & Primitive Types",
