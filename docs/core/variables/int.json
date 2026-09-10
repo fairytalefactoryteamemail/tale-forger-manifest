@@ -1,77 +1,136 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
-  "id": "core_variables",
-  "level": "beginner",
-  "family": "i_c",
-  "core": "variable",
-  "type": "primitives",
-  "min_version": "0.1.0",
-  "max_version": "0.1.0", 
-  "title": {
-    "fa": "تعریف متغیرها و انواع داده پایه",
-    "en": "Variable Declarations & Primitive Types",
-    "ja": "変数の宣言と基本型",
-    "ru": "Объявление переменных и базовые типы"
-  },
-  "quick_tips": {
-    "fa": [
-      "پشتیبانی از ۵ نوع پایه: int, float, string, bool و sci_decimal.",
-      "نوع sci_decimal برای محاسبات ممیز شناور با دقت بالا (۱۹ رقم اعشار) استفاده می‌شود.",
-      "متغیرها با تعیین صریح نوع تعریف می‌شوند.",
-      "رشته‌ها با عملگر + به انواع دیگر متصل می‌شوند.",
-      "عملیات ریاضی روی انواع عددی متناظر پشتیبانی می‌شود."
-    ],
-    "en": [
-      "Supports 5 primitive types: int, float, string, bool, and sci_decimal.",
-      "sci_decimal is used for high-precision decimal operations (19 precision digits).",
-      "Variables are explicitly typed upon declaration.",
-      "Strings seamlessly concatenate with other types via the + operator.",
-      "Standard arithmetic is supported across compatible numeric types."
-    ]
-  },
-  "prerequisites": [],
-  "content": [
+  "doc_id": "core_variables",
+  "category": "core",
+  "topic": "variables",
+  "versions": [
     {
-      "type": "text",
-      "value": {
-        "fa": "تعریف متغیرهای پایه شامل int، float، string، bool و دقیق sci_decimal",
-        "en": "Declaring primitive variables including int, float, string, bool, and precise sci_decimal"
-      }
+      "level": "beginner",
+      "family": "i_c",
+      "core": "variable",
+      "type": "primitives",
+      "min_version": "0.1.0",
+      "max_version": "0.1.9",
+      "title": {
+        "fa": "تعریف متغیرها و انواع داده پایه (نسخه 0.1.x)",
+        "en": "Variable Declarations & Primitive Types (v0.1.x)",
+        "ja": "変数の宣言と基本型 (v0.1.x)",
+        "ru": "Объявление переменных и базовые типы (v0.1.x)"
+      },
+      "quick_tips": {
+        "fa": [
+          "پشتیبانی از ۵ نوع پایه: int, float, string, bool و sci_decimal.",
+          "نوع sci_decimal برای محاسبات ممیز شناور با دقت بالا (۱۹ رقم اعشار) استفاده می‌شود.",
+          "متغیرها با تعیین صریح نوع تعریف می‌شوند.",
+          "رشته‌ها با عملگر + به انواع دیگر متصل می‌شوند."
+        ],
+        "en": [
+          "Supports 5 primitive types: int, float, string, bool, and sci_decimal.",
+          "sci_decimal is used for high-precision decimal operations (19 precision digits).",
+          "Variables are explicitly typed upon declaration.",
+          "Strings seamlessly concatenate with other types via the + operator."
+        ]
+      },
+      "prerequisites": [],
+      "content": [
+        {
+          "type": "text",
+          "value": {
+            "fa": "تعریف متغیرهای پایه شامل int، float، string، bool و دقیق sci_decimal",
+            "en": "Declaring primitive variables including int, float, string, bool, and precise sci_decimal"
+          }
+        },
+        {
+          "type": "code",
+          "lang": "taleforger",
+          "value": "int age = 25;\nfloat pi = 3.14;\nstring name = \"Ali\";\nbool isDev = true;\nsci_decimal precise = 1.234567890123456789;",
+          "output": null
+        },
+        {
+          "type": "text",
+          "value": {
+            "fa": "محاسبات ریاضی و اتصال متغیرها به رشته و چاپ خروجی",
+            "en": "Mathematical operations, string concatenation, and printing results"
+          }
+        },
+        {
+          "type": "code",
+          "lang": "taleforger",
+          "value": "int doubleAge = age * 2;\nstring greeting = \"سلام \" + name + \"!\";\n\nprint(greeting);\nprint(\"سن: \" + age);\nprint(\"int دقیق: \" + precise);",
+          "output": "سلام Ali!\nسن: 25\nint دقیق: 1.234567890123456789"
+        },
+        {
+          "type": "note",
+          "style": "info",
+          "value": {
+            "fa": "برای محاسبات مالی یا علمی بسیار دقیق حتماً از نوع sci_decimal استفاده کنید.",
+            "en": "Always use sci_decimal for high-precision financial or scientific calculations."
+          }
+        }
+      ]
     },
     {
-      "type": "code",
-      "lang": "taleforger",
-      "value": "int age = 25;\nfloat pi = 3.14;\nstring name = \"Ali\";\nbool isDev = true;\nsci_decimal precise = 1.234567890123456789;",
-      "output": null
-    },
-    {
-      "type": "text",
-      "value": {
-        "fa": "محاسبات ریاضی و اتصال متغیرها به رشته و چاپ خروجی",
-        "en": "Mathematical operations, string concatenation, and printing results"
-      }
-    },
-    {
-      "type": "code",
-      "lang": "taleforger",
-      "value": "int doubleAge = age * 2;\nfloat circleArea = pi * 7 * 7;\nstring greeting = \"سلام \" + name + \"!\";\nbool canVote = age >= 18;\n\nprint(greeting);\nprint(\"سن: \" + age);\nprint(\"مساحت دایره: \" + circleArea);\nprint(\"می‌تونه رأی بده؟ \" + canVote);\nprint(\"int دقیق: \" + precise);",
-      "output": "سلام Ali!\nسن: 25\nمساحت دایره: 153.86\nمی‌تونه رأی بده؟ true\nint دقیق: 1.234567890123456789"
-    },
-    {
-      "type": "note",
-      "style": "info",
-      "value": {
-        "fa": "برای محاسبات مالی یا علمی بسیار دقیق حتماً از نوع sci_decimal استفاده کنید.",
-        "en": "Always use sci_decimal for high-precision financial or scientific calculations."
-      }
-    },
-    {
-      "type": "image",
-      "url": "https://raw.githubusercontent.com/taleforger/docs/main/assets/primitive_types.png",
-      "alt": {
-        "fa": "نمودار حافظه انواع متغیر پایه",
-        "en": "Memory allocation graph for primitive types"
-      }
+      "level": "beginner",
+      "family": "i_c",
+      "core": "variable",
+      "type": "primitives",
+      "min_version": "0.2.0",
+      "max_version": "0.9.0",
+      "title": {
+        "fa": "تعریف متغیرها، استنتاج نوع (var) و String Interpolation",
+        "en": "Variables, Type Inference (var) & String Interpolation",
+        "ja": "変数、型推論 (var)、文字列補間",
+        "ru": "Переменные, выведение типов (var) и интерполяция строк"
+      },
+      "quick_tips": {
+        "fa": [
+          "پشتیبانی از کلیدواژه var برای استنتاج خودکار نوع متغیر.",
+          "قابلیت درون‌یابی رشته‌ها با علامت $ (String Interpolation) به جای +.",
+          "حفظ کامل پشتیبانی از نوع دقیق sci_decimal."
+        ],
+        "en": [
+          "Supports 'var' keyword for automatic type inference.",
+          "String Interpolation with '$' replaces traditional '+' concatenation.",
+          "Full backward compatibility for sci_decimal precision types."
+        ]
+      },
+      "prerequisites": [],
+      "content": [
+        {
+          "type": "text",
+          "value": {
+            "fa": "تعریف متغیرها با کلیدواژه var و تعیین خودکار نوع توسط کامپایلر",
+            "en": "Declaring variables using 'var' keyword with auto type inference"
+          }
+        },
+        {
+          "type": "code",
+          "lang": "taleforger",
+          "value": "var age = 26;\nvar name = \"Sajjad\";\nvar score = 98.5;\nsci_decimal precise = 2.718281828459045235;",
+          "output": null
+        },
+        {
+          "type": "text",
+          "value": {
+            "fa": "استفاده از String Interpolation جهت چاپ خروجی تمیزتر",
+            "en": "Using String Interpolation for cleaner output formatting"
+          }
+        },
+        {
+          "type": "code",
+          "lang": "taleforger",
+          "value": "print(\"سلام $name، سن شما $age سال است.\");\nprint(\"ثابت e با دقت بالا: $precise\");",
+          "output": "سلام Sajjad، سن شما 26 سال است.\nثابت e با دقت بالا: 2.718281828459045235"
+        },
+        {
+          "type": "note",
+          "style": "warning",
+          "value": {
+            "fa": "کلیدواژه var نوع متغیر را در زمان کامپایل قفل می‌کند و امکان تغییر نوع در ادامه وجود ندارد.",
+            "en": "The 'var' keyword locks the type at compile-time and cannot be re-assigned to another type."
+          }
+        }
+      ]
     }
   ]
 }
