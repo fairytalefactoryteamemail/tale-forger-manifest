@@ -2,7 +2,7 @@
   "sdks": [
     {
       "version": "0.1.1",
-      "channel": "stable",
+      "channel": "beta",
       "release_date": "2026-01-09",
       "file_size": "14.9 MB",
       "sha256": "55b949f8287bda54005137173963f21498a0c1461fab0c06117f4b36e4c84275",
