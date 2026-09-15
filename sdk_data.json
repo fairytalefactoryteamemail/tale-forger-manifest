@@ -3,9 +3,8 @@
     {
       "version": "0.1.1",
       "channel": "stable",
-      "release_date": "2026-07-20",
-      "file_size": "45.2 MB",
-      "commit_hash": "a1b2c3d",
+      "release_date": "2026-01-09",
+      "file_size": "14.9 MB",
       "sha256": "55b949f8287bda54005137173963f21498a0c1461fab0c06117f4b36e4c84275",
       "download_url": "https://github.com/fairytalefactoryteamemail/tale-forger-manifest/releases/download/MVP/Tale.Forger.MVP.installer.zip",
       "changelog": {
