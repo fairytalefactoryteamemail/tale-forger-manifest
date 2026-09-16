@@ -1,8 +1,10 @@
+
 {
   "sdks": [
     {
+      "app_id": "tale_forger_sdk",
       "version": "0.1.1",
-      "channel": "stable",
+      "channel": "beta",
       "release_date": "2026-01-09",
       "file_size": "14.9 MB",
       "sha256": "55b949f8287bda54005137173963f21498a0c1461fab0c06117f4b36e4c84275",
@@ -29,6 +31,33 @@
           "コアパフォーマンスの最適化"
         ]
       }
+    },
+    {
+      "app_id": "test_app",
+      "version": "1.0.0",
+      "channel": "alpha",
+      "release_date": "2026-09-16",
+      "file_size": "10 MB",
+      "sha256": "TEST_SHA256",
+      "download_url": "https://example.com/test-app.zip",
+      "changelog": {
+        "en": [
+          "Test application for multi-software support"
+        ],
+        "fa": [
+          "نرم‌افزار آزمایشی برای تست پشتیبانی از چند نرم‌افزار"
+        ],
+        "ru": [
+          "Тестовое приложение для проверки поддержки нескольких программ"
+        ],
+        "ja": [
+          "複数ソフトウェア対応をテストするためのアプリケーション"
+        ]
+      }
     }
   ]
 }
+<<<<<<< HEAD:App_data.json
+
+=======
+>>>>>>> 9a352a068a8a5e124b41ecb48f0d25e66f067448:sdk_data.json
