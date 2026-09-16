@@ -1,7 +1,9 @@
+
 {
   "sdks": [
     {
       "app_id": "tale_forger_sdk",
+      "app_name": "TaleForger SDK",
       "is_sdk": true,
       "version": "0.1.1",
       "channel": "beta",
@@ -34,6 +36,7 @@
     },
     {
       "app_id": "test_app",
+      "app_name": "Test Application",
       "is_sdk": false,
       "version": "1.0.0",
       "channel": "alpha",
