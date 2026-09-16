@@ -1,6 +1,6 @@
 
 {
-  "sdks": [
+  "Apps": [
     {
       "app_id": "tale_forger_sdk",
       "app_name": "TaleForger SDK",
