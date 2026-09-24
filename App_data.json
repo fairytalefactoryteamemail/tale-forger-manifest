@@ -33,31 +33,6 @@
           "コアパフォーマンスの最適化"
         ]
       }
-    },
-    {
-      "app_id": "test_app",
-      "app_name": "Test Application",
-      "is_sdk": false,
-      "version": "1.0.0",
-      "channel": "alpha",
-      "release_date": "2026-09-16",
-      "file_size": "10 MB",
-      "sha256": "TEST_SHA256",
-      "download_url": "https://example.com/test-app.zip",
-      "changelog": {
-        "en": [
-          "Test application for multi-software support"
-        ],
-        "fa": [
-          "نرم‌افزار آزمایشی برای تست پشتیبانی از چند نرم‌افزار"
-        ],
-        "ru": [
-          "Тестовое приложение для проверки поддержки нескольких программ"
-        ],
-        "ja": [
-          "複数ソフトウェア対応をテストするためのアプリケーション"
-        ]
-      }
     }
   ]
 }
