@@ -4,46 +4,319 @@
   "repository": "https://github.com/taleforger/tale-forger-manifest",
   "documents": [
     {
-      "id": "core_variables",
-      "url": "https://raw.githubusercontent.com/fairytalefactoryteamemail/tale-forger-manifest/refs/heads/main/docs/core/variables/int.json",
-      "level": "beginner",
+      "id": "core_variables_primitives",
+      "url": "https://raw.githubusercontent.com/fairytalefactoryteamemail/tale-forger-manifest/main/docs/core/variables/primitives.json",
+      "min_version": "0.1.0",
+      "max_version": "0.4.1",
       "family": "i_c",
       "core": "variable",
       "type": "primitive_types",
-      "version": "0.1.0",
       "title": {
-        "fa": "متغیرهای پایه و انواع داده",
+        "fa": "متغیرهای پایه و انواع داده اولیه",
         "en": "Base Variables & Primitive Types",
         "ja": "基本変数とプリミティブ型",
         "ru": "Базовые переменные и примитивные типы"
       },
       "description": {
-        "fa": "آشنایی با متغیرهای عددی، رشته‌ای و انواع داده‌های اولیه در زبان داستان‌ساز.",
-        "en": "Introduction to numeric, string, and basic primitive data types in Tale Forger.",
-        "ja": "Tale Forgerにおける数値、文字列、基本的なプリミティブデータ型の紹介。",
-        "ru": "Знакомство с числовыми, строковыми и базовыми примитивными типами данных в Tale Forger."
+        "fa": "تعریف انواع داده‌های عددی (int, float, sci_decimal)، رشته‌ای (string) و منطقی (bool).",
+        "en": "Declaration of numeric (int, float, sci_decimal), string, and boolean (bool) types.",
+        "ja": "数値 (int, float, sci_decimal)、文字列 (string)、論理型 (bool) の宣言。",
+        "ru": "Объявление числовых (int, float, sci_decimal), строковых и булевых (bool) типов."
       }
     },
     {
-      "id": "core",
-      "url": "https://raw.githubusercontent.com/fairytalefactoryteamemail/tale-forger-manifest/refs/heads/main/docs/core/variables/int.json",
-      "level": "beginner",
+      "id": "core_collections_lists",
+      "url": "https://raw.githubusercontent.com/fairytalefactoryteamemail/tale-forger-manifest/main/docs/core/collections/lists.json",
+      "min_version": "0.1.0",
+      "max_version": "0.4.1",
       "family": "i_c",
-      "core": "variable",
-      "type": "primitive_types",
-      "version": "0.1.0",
+      "core": "collections",
+      "type": "list",
       "title": {
-        "fa": "متغیرهای پایه و انواع داده",
-        "en": "Base Variables & Primitive Types",
-        "ja": "基本変数とプリミティブ型",
-        "ru": "Базовые переменные и примитивные типы"
+        "fa": "آرایه‌ها و لیست‌ها (list)",
+        "en": "Arrays & Lists (list)",
+        "ja": "配列とリスト (list)",
+        "ru": "Массивы и списки (list)"
       },
       "description": {
-        "fa": "مفاهیم اساسی تعریف متغیرها و نحوه مدیریت داده‌های اولیه.",
-        "en": "Core concepts of variable declaration and handling primitive data.",
-        "ja": "変数宣言とプリミティブ data の取り扱いの core な概念。",
-        "ru": "Основные концепции объявления переменных и работы с примитивными данными."
+        "fa": "ساختار داده لیست، الحاق آیتم‌ها، مقداردهی و محاسبه طول آن.",
+        "en": "List data structure, item concatenation, initialization, and length calculation.",
+        "ja": "リストデータ構造、要素の結合、初期化、長さの取得。",
+        "ru": "Структура данных список, объединение элементов, инициализация и получение длины."
       }
-    }
+    },
+    {
+      "id": "core_collections_dictionaries",
+      "url": "https://raw.githubusercontent.com/fairytalefactoryteamemail/tale-forger-manifest/main/docs/core/collections/dictionaries.json",
+      "min_version": "0.1.0",
+      "max_version": "0.4.1",
+      "family": "i_c",
+      "core": "collections",
+      "type": "dict",
+      "title": {
+        "fa": "دیکشنری‌ها و جدول هش (dict)",
+        "en": "Dictionaries & Hash Maps (dict)",
+        "ja": "辞書とハッシュマップ (dict)",
+        "ru": "Словари и хэш-таблицы (dict)"
+      },
+      "description": {
+        "fa": "کلید-مقدارها، دسترسی به اندیس‌های نام‌گذاری‌شده و استخراج داده‌ها.",
+        "en": "Key-value pairs, accessing named indices, and data extraction.",
+        "ja": "キー・バリューペア、名前付きインデックスへのアクセス、データ抽出。",
+        "ru": "Пары ключ-значение, доступ по именованным индексам и извлечение данных."
+      }
+    },
+    {
+      "id": "core_oop_classes",
+      "url": "https://raw.githubusercontent.com/fairytalefactoryteamemail/tale-forger-manifest/main/docs/core/oop/classes.json",
+      "min_version": "0.1.0",
+      "max_version": "0.4.1",
+      "family": "i_c",
+      "core": "oop",
+      "type": "class_declaration",
+      "title": {
+        "fa": "کلاس‌ها و شیءگرایی (class)",
+        "en": "Classes & Object-Oriented Programming (class)",
+        "ja": "クラスとオブジェクト指向 (class)",
+        "ru": "Классы и ООП (class)"
+      },
+      "description": {
+        "fa": "تعریف کلاس، ویژگی‌ها (Fields)، متدها و دسترسی به کلمه کلیدی this / این / 自身 / это.",
+        "en": "Defining classes, fields, methods, and accessing self references using 'this'.",
+        "ja": "クラス、フィールド、メソッドの定義と 'this' キーワードによる参照。",
+        "ru": "Объявление классов, полей, методов и доступ через ключевое слово 'this'."
+      }
+    },
+    {
+      "id": "core_functions_global",
+      "url": "https://raw.githubusercontent.com/fairytalefactoryteamemail/tale-forger-manifest/main/docs/core/functions/global_functions.json",
+      "min_version": "0.1.0",
+      "max_version": "0.4.1",
+      "family": "i_c",
+      "core": "functions",
+      "type": "global_function",
+      "title": {
+        "fa": "توابع سراسری و بازگشتی (func)",
+        "en": "Global & Returning Functions (func)",
+        "ja": "グローバル関数と戻り値 (func)",
+        "ru": "Глобальные функции и возврат значений (func)"
+      },
+      "description": {
+        "fa": "تعریف توابع مستقل، ورودی‌ها با نوع داده مشخص و تعیین نوع خروجی با علامت <-.",
+        "en": "Defining standalone functions, typed arguments, and return types with -> syntax.",
+        "ja": "独立した関数の定義、型 지정 引数、'->' による戻り値型の指定。",
+        "ru": "Объявление функций, типизированные аргументы и указание типа возврата через '->'."
+      }
+    },
+    {
+      "id": "core_control_flow_if_c_style",
+      "url": "https://raw.githubusercontent.com/fairytalefactoryteamemail/tale-forger-manifest/main/docs/core/control_flow/if_c_style.json",
+      "min_version": "0.4.0",
+      "max_version": "0.4.1",
+      "family": "c",
+      "core": "control_flow",
+      "type": "conditionals",
+      "title": {
+        "fa": "تصمیم‌گیری و شرط‌ها (سبک C)",
+        "en": "Conditionals & Decision Making (C-Style)",
+        "ja": "条件分岐 (Cスタイル)",
+        "ru": "Условия и принятие решений (Стиль C)"
+      },
+      "description": {
+        "fa": "دستورات شرطی (اگر / وگرنه) با استفاده از پرانتز اجباری به سبک C.",
+        "en": "Conditional execution (if / else) using required parentheses C-style format.",
+        "ja": "Cスタイルの必須括弧を使用した条件分岐 (if / else)。",
+        "ru": "Условные операторы (если / иначе) с использованием скобок в стиле C."
+      }
+    },
+    {
+      "id": "core_control_flow_if_python_style",
+      "url": "https://raw.githubusercontent.com/fairytalefactoryteamemail/tale-forger-manifest/main/docs/core/control_flow/if_python_style.json",
+      "min_version": "0.4.1",
+      "max_version": "0.4.1",
+      "family": "i",
+      "core": "control_flow",
+      "type": "conditionals",
+      "title": {
+        "fa": "تصمیم‌گیری و شرط‌ها (سبک پایتون)",
+        "en": "Conditionals & Decision Making (Python-Style)",
+        "ja": "条件分岐 (Pythonスタイル)",
+        "ru": "Условия и принятие решений (Стиль Python)"
+      },
+      "description": {
+        "fa": "دستورات شرطی بدون نیاز به پرانتز و با علامت دو نقطه (:) به سبک پایتون.",
+        "en": "Conditional execution without parentheses using colon (:) Python-style format.",
+        "ja": "括弧なしでコロン (:) を使用したPythonスタイルの条件分岐。",
+        "ru": "Условные операторы без скобок с двоеточием (:) в стиле Python."
+      }
+    },
+    {
+      "id": "core_loops_while_c_style",
+      "url": "https://raw.githubusercontent.com/fairytalefactoryteamemail/tale-forger-manifest/main/docs/core/loops/while_c_style.json",
+      "min_version": "0.4.0",
+      "max_version": "0.4.1",
+      "family": "c",
+      "core": "loops",
+      "type": "while_loop",
+      "title": {
+        "fa": "حلقه تاوقتی / while (سبک C)",
+        "en": "While Loop (C-Style)",
+        "ja": "while ループ (Cスタイル)",
+        "ru": "Цикл пока / while (Стиль C)"
+      },
+      "description": {
+        "fa": "حلقه تاوقتی با ارزیابی شرط داخل پرانتز به سبک C.",
+        "en": "While loop evaluating parenthesized condition in C-style format.",
+        "ja": "括弧内の条件を評価するCスタイルの while ループ。",
+        "ru": "Цикл пока с вычислением условия в скобках в стиле C."
+      }
+    },
+    {
+      "id": "core_loops_while_python_style",
+      "url": "https://raw.githubusercontent.com/fairytalefactoryteamemail/tale-forger-manifest/main/docs/core/loops/while_python_style.json",
+      "min_version": "0.4.1",
+      "max_version": "0.4.1",
+      "family": "i",
+      "core": "loops",
+      "type": "while_loop",
+      "title": {
+        "fa": "حلقه تاوقتی / while (سبک پایتون)",
+        "en": "While Loop (Python-Style)",
+        "ja": "while ループ (Pythonスタイル)",
+        "ru": "Цикл пока / while (Стиль Python)"
+      },
+      "description": {
+        "fa": "حلقه تاوقتی با عبارات بدون پرانتز و علامت دو نقطه (:) به سبک پایتون.",
+        "en": "While loop using unparenthesized expression followed by colon in Python style.",
+        "ja": "括弧なしの式とコロンを使用したPythonスタイルの while ループ。",
+        "ru": "Цикл пока с выражением без скобок и двоеточием в стиле Python."
+      }
+    },
+    {
+      "id": "core_loops_for_step",
+      "url": "https://raw.githubusercontent.com/fairytalefactoryteamemail/tale-forger-manifest/main/docs/core/loops/for_step.json",
+      "min_version": "0.4.0",
+      "max_version": "0.4.1",
+      "family": "i_c",
+      "core": "loops",
+      "type": "for_loop",
+      "title": {
+        "fa": "حلقه برای با گام مشخص (for / step)",
+        "en": "For Loop with Custom Step (for / step)",
+        "ja": "ステップ指定 for ループ (for / step)",
+        "ru": "Цикл для с шагом (for / step)"
+      },
+      "description": {
+        "fa": "حلقه شمارشی با گام اختیاری (گام / step / шаг / ステップ) و پیمایش آرایه‌ها.",
+        "en": "Counting loop supporting custom step execution and array iteration.",
+        "ja": "カスタムステップ実行と配列の反復処理をサポートするカウントループ。",
+        "ru": "Счетный цикл с поддержкой настраиваемого шага и итерации по массиву."
+      }
+    },
+    {
+      "id": "core_loops_control_jump",
+      "url": "https://raw.githubusercontent.com/fairytalefactoryteamemail/tale-forger-manifest/main/docs/core/loops/jump_statements.json",
+      "min_version": "0.4.0",
+      "max_version": "0.4.1",
+      "family": "i_c",
+      "core": "loops",
+      "type": "jump_statements",
+      "title": {
+        "fa": "دستورات کنترل حلقه (بشکن و ادامه)",
+        "en": "Loop Jump Controls (break & continue)",
+        "ja": "ループ制御文 (中断と続行)",
+        "ru": "Управление циклами (прервать и продолжить)"
+      },
+      "description": {
+        "fa": "خروج پیش از موعد از حلقه (بشکن / break) یا پرش به دور بعدی (ادامه / continue).",
+        "en": "Early loop termination (break) or skipping to the next iteration (continue).",
+        "ja": "ループの中断 (break) および次の反復へのスキップ (continue)。",
+        "ru": "Досрочный выход из цикла (break) или переход к следующей итерации (continue)."
+      }
+    },
+    {
+  "id": "core_operators_logical",
+  "url": "https://raw.githubusercontent.com/fairytalefactoryteamemail/tale-forger-manifest/main/docs/core/operators/logical.json",
+  "min_version": "0.4.1",
+  "max_version": "0.4.1",
+  "family": "i_c",
+  "core": "operators",
+  "type": "logical",
+  "title": {
+    "fa": "عملگرهای منطقی (&& / || / !)",
+    "en": "Logical Operators (&& / || / !)",
+    "ja": "論理演算子 (&& / || / !)",
+    "ru": "Логические операторы (&& / || / !)"
+  },
+  "description": {
+    "fa": "ترکیب و نقیض شرایط منطقی با استفاده از عملگرهای AND (&&)، OR (||) و NOT (!).",
+    "en": "Combining and negating boolean conditions using AND (&&), OR (||), and NOT (!).",
+    "ja": "AND (&&)、OR (||)、NOT (!) 演算子を使用した論理条件の結合と否定。",
+    "ru": "Объединение и отрицание логических условий с помощью операторов AND (&&), OR (||) и NOT (!)."
+  }
+},
+{
+  "id": "core_operators_arithmetic",
+  "url": "https://raw.githubusercontent.com/fairytalefactoryteamemail/tale-forger-manifest/main/docs/core/operators/arithmetic.json",
+  "min_version": "0.1.0",
+  "max_version": "0.4.1",
+  "family": "i_c",
+  "core": "operators",
+  "type": "arithmetic",
+  "title": {
+    "fa": "عملگرهای ریاضی",
+    "en": "Arithmetic Operators",
+    "ja": "算術演算子",
+    "ru": "Арифметические операторы"
+  },
+  "description": {
+    "fa": "انجام محاسبات عددی با استفاده از عملگرهای جمع، تفریق، ضرب و تقسیم.",
+    "en": "Performing numeric calculations using addition, subtraction, multiplication, and division operators.",
+    "ja": "加算、減算、乗算、除算演算子を使用した数値計算。",
+    "ru": "Выполнение числовых вычислений с помощью операторов сложения, вычитания, умножения и деления."
+  }
+},
+{
+  "id": "core_operators_comparison",
+  "url": "https://raw.githubusercontent.com/fairytalefactoryteamemail/tale-forger-manifest/main/docs/core/operators/comparison.json",
+  "min_version": "0.1.0",
+  "max_version": "0.4.1",
+  "family": "i_c",
+  "core": "operators",
+  "type": "comparison",
+  "title": {
+    "fa": "عملگرهای مقایسه‌ای",
+    "en": "Comparison Operators",
+    "ja": "比較演算子",
+    "ru": "Операторы сравнения"
+  },
+  "description": {
+    "fa": "مقایسه مقادیر با استفاده از عملگرهای بزرگتر، کوچکتر، مساوی و نابرابر.",
+    "en": "Comparing values using greater than, less than, equality, and inequality operators.",
+    "ja": "大小、等価、不等価などの比較演算子による値の比較。",
+    "ru": "Сравнение значений с помощью операторов больше, меньше, равенства и неравенства."
+  }
+},
+{
+  "id": "core_oop_object_access",
+  "url": "https://raw.githubusercontent.com/fairytalefactoryteamemail/tale-forger-manifest/main/docs/core/oop/object_access.json",
+  "min_version": "0.1.0",
+  "max_version": "0.4.1",
+  "family": "i_c",
+  "core": "oop",
+  "type": "object_access",
+  "title": {
+    "fa": "ساخت و دسترسی به اشیاء",
+    "en": "Object Construction & Member Access",
+    "ja": "オブジェクト生成とメンバーアクセス",
+    "ru": "Создание объектов и доступ к членам"
+  },
+  "description": {
+    "fa": "ساخت اشیاء از کلاس‌ها و دسترسی به فیلدها و متدهای آن‌ها با استفاده از عملگر نقطه.",
+    "en": "Creating objects from classes and accessing their fields and methods using member access.",
+    "ja": "クラスからのオブジェクト生成とメンバーアクセスによるフィールドおよびメソッドへのアクセス。",
+    "ru": "Создание объектов из классов и доступ к их полям и методам через доступ к членам."
+  }
+}
   ]
 }
