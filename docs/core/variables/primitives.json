@@ -37,7 +37,7 @@
           "文字列は、+ 演算子を使用して他の文字列やデータ型とシームレスに連結できます。"
         ],
         "ru": [
-          "Поддерживает 5 базовых типов: целое (int), вещественное (float), строка (string), логическое (bool) и sci_decimal.",
+          "Поддерживает 5 базовых типов: целое (int), вещественное (float), строка (string), логическое (bool) و sci_decimal.",
           "Тип sci_decimal разработан для высокоточных финансовых или научных вычислений (до 19 знаков после запятой).",
           "В Taleforger типизация переменных является явной.",
           "Строки можно легко объединять друг с другом или с другими типами данных с помощью оператора +."
@@ -48,49 +48,49 @@
         {
           "type": "text",
           "value": {
-            "fa": "برای تعریف یک متغیر، ابتدا نوع داده، سپس نام متغیر و در نهایت مقدار آن را مشخص می‌کنیم. در ادامه نمونه‌ای از تعریف تمام انواع داده پایه را مشاهده می‌کنید.",
-            "en": "To declare a variable, specify the data type, followed by the variable name, and finally its value. Below is an example of declaring all primitive data types.",
-            "ja": "変数を宣言するには、データ型、変数名、そして値の順に指定します。以下は、すべての基本データ型を宣言する例です。",
-            "ru": "Чтобы объявить переменную, укажите тип данных, затем имя переменной и, наконец, ее значение. Ниже приведен пример объявления всех примитивных типов данных."
+            "fa": "برای تعریف یک متغیر، ابتدا نوع داده، سپس نام متغیر و در نهایت مقدار آن را مشخص می‌کنیم.",
+            "en": "To declare a variable, specify the data type, followed by the variable name, and finally its value.",
+            "ja": "変数を宣言するには、データ型、変数名、そして値の順に指定します。",
+            "ru": "Чтобы объявить переменную, укажите тип данных, затем имя переменной и, наконец, ее значение."
           }
         },
         {
           "type": "code",
           "lang": "taleforger",
           "value": {
-            "fa": "عدد سن = 25;\nاعشار پی = 3.14;\nرشته نام = \"علی\";\nبول توسعه_دهنده = درست;\nsci_decimal دقیق = 1.234567890123456789;\n\nچاپ(\"متغیرها با موفقیت تعریف شدند.\");",
-            "en": "int age = 25;\nfloat pi = 3.14;\nstring name = \"Ali\";\nbool isDev = true;\nsci_decimal precise = 1.234567890123456789;\n\nprint(\"Variables defined successfully.\");",
-            "ja": "整数 age = 25;\n浮動 pi = 3.14;\n文字列 name = \"Ali\";\n論理 isDev = true;\nsci_decimal precise = 1.234567890123456789;\n\n表示(\"変数が正常に定義されました。\");",
-            "ru": "цел age = 25;\nвещ pi = 3.14;\nстр name = \"Ali\";\nлог isDev = true;\nsci_decimal precise = 1.234567890123456789;\n\nпечать(\"Переменные успешно определены.\");"
+            "fa": "// تعریف انواع داده‌های پایه\nعدد سن = 25;\nاعشار پی = 3.14;\nرشته نام = \"علی\";\nبول توسعه_دهنده = درست;\nsci_decimal دقیق = 1.234567890123456789;",
+            "en": "// Declare base primitive types\nint age = 25;\nfloat pi = 3.14;\nstring name = \"Ali\";\nbool isDev = true;\nsci_decimal precise = 1.234567890123456789;",
+            "ja": "// 基本プリミティブ型の宣言\n整数 年齢 = 25;\n浮動 円周率 = 3.14;\n文字列 名前 = \"アリ\";\n論理 開発者 = true;\nsci_decimal 精密値 = 1.234567890123456789;",
+            "ru": "// Объявление базовых примитивных типов\nцел возраст = 25;\nвещ числоПи = 3.14;\nстр имя = \"Али\";\nлог являетсяРазработчиком = true;\nsci_decimal точноеЗначение = 1.234567890123456789;"
           }
         },
         {
           "type": "text",
           "value": {
-            "fa": "شما می‌توانید روی متغیرهای عددی عملیات ریاضی انجام دهید و نتیجه را مستقیماً با رشته‌ها ترکیب کرده و چاپ کنید. (این بلوک به صورت مستقل قابل اجرا است)",
-            "en": "You can perform mathematical operations on numeric variables and directly concatenate the results with strings to print them. (This block is independently runnable)",
-            "ja": "数値変数に対して数学演算を実行し、結果を文字列と直接連結して出力できます。（このブロックは独立して実行可能です）",
-            "ru": "Вы можете выполнять математические операции с числовыми переменными и напрямую объединять результаты со строками для их вывода. (Этот блок можно запустить независимо)"
+            "fa": "شما می‌توانید روی متغیرهای عددی عملیات ریاضی انجام دهید و نتیجه را مستقیماً با رشته‌ها ترکیب کرده و چاپ کنید.",
+            "en": "You can perform mathematical operations on numeric variables and directly concatenate the results with strings to print them.",
+            "ja": "数値変数に対して数学演算を実行し、結果を文字列と直接連結して出力できます。",
+            "ru": "Вы можете выполнять математические операции с числовыми переменными и напрямую объединять результаты со строками для их вывода."
           }
         },
         {
           "type": "code",
           "lang": "taleforger",
           "value": {
-            "fa": "// تعریف متغیرها برای اجرای مستقل این بلوک\nعدد سن = 25;\nرشته نام = \"علی\";\nsci_decimal دقیق = 1.234567890123456789;\n\n// عملیات و چاپ\nعدد دوبرابر_سن = سن * 2;\nرشته پیام = \"سلام \" + نام + \"!\";\n\nچاپ(پیام);\nچاپ(\"سن دو برابر شده: \" + دوبرابر_سن);\nچاپ(\"مقدار دقیق: \" + دقیق);",
-            "en": "// Define variables for independent execution\nint age = 25;\nstring name = \"Ali\";\nsci_decimal precise = 1.234567890123456789;\n\n// Operations and printing\nint doubleAge = age * 2;\nstring message = \"Hello \" + name + \"!\";\n\nprint(message);\nprint(\"Doubled age: \" + doubleAge);\nprint(\"Precise value: \" + precise);",
-            "ja": "// 独立実行のため変数を定義\n整数 age = 25;\n文字列 name = \"Ali\";\nsci_decimal precise = 1.234567890123456789;\n\n// 演算と出力\n整数 doubleAge = age * 2;\n文字列 message = \"こんにちは \" + name + \"!\";\n\n表示(message);\n表示(\"2倍の年齢: \" + doubleAge);\n表示(\"正確な値: \" + precise);",
-            "ru": "// Определение переменных для независимого выполнения\nцел age = 25;\nстр name = \"Ali\";\nsci_decimal precise = 1.234567890123456789;\n\n// Операции и вывод\nцел doubleAge = age * 2;\nстр message = \"Привет \" + name + \"!\";\n\nпечать(message);\nпечать(\"Удвоенный возраст: \" + doubleAge);\nпечать(\"Точное значение: \" + precise);"
+            "fa": "// عملیات ریاضی و الحاق رشته (مستقل)\nعدد سن = 25;\nرشته نام = \"علی\";\nsci_decimal دقیق = 1.234567890123456789;\n\nعدد دوبرابر_سن = سن * 2;\nرشته پیام = \"سلام \" + نام + \"!\";\n\nچاپ(پیام);\nچاپ(\"سن دو برابر شده: \" + دوبرابر_سن);\nچاپ(\"مقدار دقیق: \" + دقیق);",
+            "en": "// Math operations and string concatenation (Independent)\nint age = 25;\nstring name = \"Ali\";\nsci_decimal precise = 1.234567890123456789;\n\nint doubleAge = age * 2;\nstring message = \"Hello \" + name + \"!\";\n\nprint(message);\nprint(\"Doubled age: \" + doubleAge);\nprint(\"Precise value: \" + precise);",
+            "ja": "// 数学演算と文字列連結（独立）\n整数 年齢 = 25;\n文字列 名前 = \"アリ\";\nsci_decimal 精密値 = 1.234567890123456789;\n\n整数 倍年齢 = 年齢 * 2;\n文字列 メッセージ = \"こんにちは \" + 名前 + \"!\";\n\n表示(メッセージ);\n表示(\"2倍の年齢: \" + 倍年齢);\n表示(\"正確な値: \" + 精密値);",
+            "ru": "// Математические операции и конкатенация строк (Независимо)\nцел возраст = 25;\nстр имя = \"Али\";\nsci_decimal точноеЗначение = 1.234567890123456789;\n\nцел удвоенныйВозраст = возраст * 2;\nстр сообщение = \"Привет, \" + имя + \"!\";\n\nпечать(сообщение);\nпечать(\"Удвоенный возраст: \" + удвоенныйВозраст);\nпечать(\"Точное значение: \" + точноеЗначение);"
           }
         },
         {
           "type": "note",
           "style": "info",
           "value": {
-            "fa": "نکته حرفه‌ای: برای محاسباتی که کوچکترین خطای اعشاری در آن‌ها فاجعه‌بار است (مانند سیستم‌های بانکی یا محاسبات مدارهای فضایی)، همیشه از نوع sci_decimal به جای float استفاده کنید.",
-            "en": "Pro Tip: For calculations where even the slightest decimal error is catastrophic (such as banking systems or spacecraft trajectory calculations), always use sci_decimal instead of float.",
-            "ja": "プロのヒント: わずかな小数の誤差も致命的となる計算（銀行システムや宇宙船の軌道計算など）では、floatの代わりに常にsci_decimalを使用してください。",
-            "ru": "Профессиональный совет: Для вычислений, где даже малейшая десятичная ошибка катастрофична (например, банковские системы или расчеты траектории космических аппаратов), всегда используйте sci_decimal вместо float."
+            "fa": "نکته حرفه‌ای: برای محاسباتی که کوچکترین خطای اعشاری در آن‌ها فاجعه‌بار است، همیشه از نوع sci_decimal به جای float استفاده کنید.",
+            "en": "Pro Tip: For calculations where even the slightest decimal error is catastrophic, always use sci_decimal instead of float.",
+            "ja": "プロのヒント: わずかな小数の誤差も致命的となる計算では、floatの代わりに常にsci_decimalを使用してください。",
+            "ru": "Профессиональный совет: Для вычислений, где даже малейшая десятичная ошибка катастрофична, всегда используйте sci_decimal вместо float."
           }
         }
       ]

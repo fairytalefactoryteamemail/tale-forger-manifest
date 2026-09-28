@@ -54,10 +54,10 @@
           "type": "code",
           "lang": "taleforger",
           "value": {
-            "fa": "عدد شمارنده = 0;\nچاپ(\"شمارش با تاوقتی:\");\nتاوقتی شمارنده < 3: {\n    چاپ(\"  عدد \" + شمارنده);\n    شمارنده = شمارنده + 1;\n}\n\n// حالت تک‌دستوری\nشمارنده = 0;\nتاوقتی شمارنده < 2: شمارنده = شمارنده + 1;\nچاپ(\"پایان: \" + شمارنده);",
-            "en": "int counter = 0;\nprint(\"Counting with while:\");\nwhile counter < 3: {\n    print(\"  Number \" + counter);\n    counter = counter + 1;\n}\n\n// Single-statement mode\ncounter = 0;\nwhile counter < 2: counter = counter + 1;\nprint(\"End: \" + counter);",
-            "ja": "整数 counter = 0;\n表示(\"while でのカウント:\");\nの間 counter < 3: {\n    表示(\"  番号 \" + counter);\n    counter = counter + 1;\n}\n\n// 単一ステートメントモード\ncounter = 0;\nの間 counter < 2: counter = counter + 1;\n表示(\"終了: \" + counter);",
-            "ru": "цел counter = 0;\nпечать(\"Подсчет с помощью пока:\");\nпока counter < 3: {\n    печать(\"  Число \" + counter);\n    counter = counter + 1;\n}\n\n// Режим одиночного оператора\ncounter = 0;\nпока counter < 2: counter = counter + 1;\nпечать(\"Конец: \" + counter);"
+            "fa": "عدد شمارنده = 0;\nچاپ(\"شمارش با تاوقتی:\");\nتاوقتی شمارنده < 3: {\n    چاپ(\"  شمارنده: \" + شمارنده);\n    شمارنده = شمارنده + 1;\n}\n\n// حالت تک‌دستوری\nشمارنده = 0;\nتاوقتی شمارنده < 2: شمارنده = شمارنده + 1;\nچاپ(\"پایان: \" + شمارنده);",
+            "en": "int counter = 0;\nprint(\"Counting with while:\");\nwhile counter < 3: {\n    print(\"  counter: \" + counter);\n    counter = counter + 1;\n}\n\n// Single-statement mode\ncounter = 0;\nwhile counter < 2: counter = counter + 1;\nprint(\"End: \" + counter);",
+            "ja": "整数 カウンタ = 0;\n表示(\"while でのカウント:\");\nの間 カウンタ < 3: {\n    表示(\"  カウンタ: \" + カウンタ);\n    カウンタ = カウンタ + 1;\n}\n\n// 単一ステートメントモード\nカウンタ = 0;\nの間 カウンタ < 2: カウンタ = カウンタ + 1;\n表示(\"終了: \" + カウンタ);",
+            "ru": "цел счетчик = 0;\nпечать(\"Подсчет с помощью пока:\");\nпока счетчик < 3: {\n    печать(\"  Счетчик: \" + счетчик);\n    счетчик = счетчик + 1;\n}\n\n// Режим одиночного оператора\nсчетчик = 0;\nпока счетчик < 2: счетчик = счетчик + 1;\nпечать(\"Конец: \" + счетчик);"
           }
         }
       ]

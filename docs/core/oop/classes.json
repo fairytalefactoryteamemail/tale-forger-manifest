@@ -58,10 +58,10 @@
           "type": "code",
           "lang": "taleforger",
           "value": {
-            "fa": "کلاس Calculator {\n    عدد factor;\n\n    تابع multiply(عدد x) -> عدد {\n        برگردان این.factor * x;\n    }\n}",
-            "en": "class Calculator {\n    int factor;\n\n    func multiply(int x) -> int {\n        return this.factor * x;\n    }\n}",
-            "ja": "クラス Calculator {\n    整数 factor;\n\n    関数 multiply(整数 x) -> 整数 {\n        返す 自身.factor * x;\n    }\n}",
-            "ru": "класс Calculator {\n    цел factor;\n\n    функ multiply(цел x) -> цел {\n        возврат это.factor * x;\n    }\n}"
+            "fa": "کلاس ماشین_حساب {\n    عدد ضریب;\n\n    تابع ضرب_کن(عدد مقدار) -> عدد {\n        برگردان این.ضریب * مقدار;\n    }\n}",
+            "en": "class Calculator {\n    int factor;\n\n    func multiply(int value) -> int {\n        return this.factor * value;\n    }\n}",
+            "ja": "クラス 電卓 {\n    整数 係数;\n\n    関数 掛ける(整数 値) -> 整数 {\n        返す 自身.係数 * 値;\n    }\n}",
+            "ru": "класс Калькулятор {\n    цел множитель;\n\n    функ умножить(цел значение) -> цел {\n        возврат это.множитель * значение;\n    }\n}"
           }
         },
         {

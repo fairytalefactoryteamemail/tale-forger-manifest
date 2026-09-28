@@ -54,10 +54,10 @@
           "type": "code",
           "lang": "taleforger",
           "value": {
-            "fa": "Calculator calc = Calculator();\ncalc.factor = 10;\nچاپ(calc.multiply(5));   // خروجی: 50\n\ncalc.factor = 20;\nچاپ(calc.multiply(3));   // خروجی: 60",
+            "fa": "ماشین_حساب حسابگر = ماشین_حساب();\nحسابگر.ضریب = 10;\nچاپ(حسابگر.ضرب_کن(5));   // خروجی: 50\n\nحسابگر.ضریب = 20;\nچاپ(حسابگر.ضرب_کن(3));   // خروجی: 60",
             "en": "Calculator calc = Calculator();\ncalc.factor = 10;\nprint(calc.multiply(5));   // Output: 50\n\ncalc.factor = 20;\nprint(calc.multiply(3));   // Output: 60",
-            "ja": "Calculator calc = Calculator();\ncalc.factor = 10;\n表示(calc.multiply(5));   // 出力: 50\n\ncalc.factor = 20;\n表示(calc.multiply(3));   // 出力: 60",
-            "ru": "Calculator calc = Calculator();\ncalc.factor = 10;\nпечать(calc.multiply(5));   // Вывод: 50\n\ncalc.factor = 20;\nпечать(calc.multiply(3));   // Вывод: 60"
+            "ja": "電卓 電卓_インスタンス = 電卓();\n電卓_インスタンス.係数 = 10;\n表示(電卓_インスタンス.掛ける(5));   // 出力: 50\n\n電卓_インスタンス.係数 = 20;\n表示(電卓_インスタンス.掛ける(3));   // 出力: 60",
+            "ru": "Калькулятор калькулятор_объект = Калькулятор();\nкалькулятор_объект.множитель = 10;\nпечать(калькулятор_объект.умножить(5));   // Вывод: 50\n\nкалькулятор_объект.множитель = 20;\nпечать(калькулятор_объект.умножить(3));   // Вывод: 60"
           }
         }
       ]

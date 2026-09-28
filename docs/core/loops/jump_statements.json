@@ -54,10 +54,10 @@
           "type": "code",
           "lang": "taleforger",
           "value": {
-            "fa": "چاپ(\"تست بشکن و ادامه:\");\nعدد num = 0;\nتاوقتی (true) {\n    num = num + 1;\n    اگر (num == 2) {\n        ادامه; // رد شدن از عدد ۲\n    }\n    چاپ(\"  شماره \" + num);\n    اگر (num == 4) {\n        بشکن;    // توقف در ۴\n    }\n}",
-            "en": "print(\"Testing break and continue:\");\nint num = 0;\nwhile (true) {\n    num = num + 1;\n    if (num == 2) {\n        continue; // Skip number 2\n    }\n    print(\"  Number \" + num);\n    if (num == 4) {\n        break;    // Stop at 4\n    }\n}",
-            "ja": "表示(\"中断と続行のテスト:\");\n整数 num = 0;\nの間 (true) {\n    num = num + 1;\n    もし (num == 2) {\n        続行; // 番号 2 をスキップ\n    }\n    表示(\"  番号 \" + num);\n    もし (num == 4) {\n        中断;    // 4 で停止\n    }\n}",
-            "ru": "печать(\"Тест прервать и продолжить:\");\nцел num = 0;\nпока (true) {\n    num = num + 1;\n    если (num == 2) {\n        продолжить; // Пропуск числа 2\n    }\n    печать(\"  Номер \" + num);\n    если (num == 4) {\n        прервать;    // Остановка на 4\n    }\n}"
+            "fa": "چاپ(\"تست بشکن و ادامه:\");\nعدد شماره = 0;\nتاوقتی (true) {\n    شماره = شماره + 1;\n    اگر (شماره == 2) {\n        ادامه; // رد شدن از عدد ۲\n    }\n    چاپ(\"  شماره \" + شماره);\n    اگر (شماره == 4) {\n        بشکن;    // توقف در ۴\n    }\n}",
+            "en": "print(\"Testing break and continue:\");\nint currentNum = 0;\nwhile (true) {\n    currentNum = currentNum + 1;\n    if (currentNum == 2) {\n        continue; // Skip number 2\n    }\n    print(\"  Number \" + currentNum);\n    if (currentNum == 4) {\n        break;    // Stop at 4\n    }\n}",
+            "ja": "表示(\"中断と続行のテスト:\");\n整数 番号 = 0;\nの間 (true) {\n    番号 = 番号 + 1;\n    もし (番号 == 2) {\n        続行; // 番号 2 をスキップ\n    }\n    表示(\"  番号 \" + 番号);\n    もし (番号 == 4) {\n        中断;    // 4 で停止\n    }\n}",
+            "ru": "печать(\"Тест прервать и продолжить:\");\nцел номер = 0;\nпока (true) {\n    номер = номер + 1;\n    если (номер == 2) {\n        продолжить; // Пропуск числа 2\n    }\n    печать(\"  Номер \" + номер);\n    если (номер == 4) {\n        прервать;    // Остановка на 4\n    }\n}"
           }
         },
         {
