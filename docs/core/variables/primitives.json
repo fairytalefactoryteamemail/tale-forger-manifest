@@ -77,8 +77,8 @@
           "type": "code",
           "lang": "taleforger",
           "value": {
-            "fa": "عدد دوبرابر_سن = سن * 2;\nرشته پیام = \"سلام \" + نام + \"!\";\n\nچاپ(پیام);\nچاپ(\"سن دو برابر شده: \" + دوبرابر_سن);\nچاپ(\"مقدار دقیق: \" + دقیق);",
-            "en": "int doubleAge = age * 2;\nstring message = \"Hello \" + name + \"!\";\n\nprint(message);\nprint(\"Doubled age: \" + doubleAge);\nprint(\"Precise value: \" + precise);",
+            "fa": "عدد دوبرابر_سن = سن * عدد سن = 25;2;\nرشته پیام = \"سلام \" + نام + \"!\";\n\nچاپ(پیام);\nچاپ(\"سن دو برابر شده: \" + دوبرابر_سن);\nچاپ(\"مقدار دقیق: \" + دقیق);",
+            "en": "int age = 25;int doubleAge = age * 2;\nstring message = \"Hello \" + name + \"!\";\n\nprint(message);\nprint(\"Doubled age: \" + doubleAge);\nprint(\"Precise value: \" + precise);",
             "ja": "整数 doubleAge = age * 2;\n文字列 message = \"こんにちは \" + name + \"!\";\n\n表示(message);\n表示(\"2倍の年齢: \" + doubleAge);\n表示(\"正確な値: \" + precise);",
             "ru": "цел doubleAge = age * 2;\nстр message = \"Привет \" + name + \"!\";\n\nпечать(message);\nпечать(\"Удвоенный возраст: \" + doubleAge);\nпечать(\"Точное значение: \" + precise);"
           }
