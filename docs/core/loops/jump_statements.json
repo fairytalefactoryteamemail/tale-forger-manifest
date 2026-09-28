@@ -1,0 +1,76 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "doc_id": "core_loops_control_jump",
+  "category": "core",
+  "topic": "loops",
+  "versions": [
+    {
+      "level": "beginner",
+      "family": "i_c",
+      "core": "loops",
+      "type": "jump_statements",
+      "min_version": "0.4.0",
+      "max_version": "0.4.1",
+      "title": {
+        "fa": "کنترل جریان حلقه (بشکن و ادامه)",
+        "en": "Loop Flow Control (break & continue)",
+        "ja": "ループフロー制御 (中断と続行)",
+        "ru": "Управление потоком цикла (прервать и продолжить)"
+      },
+      "quick_tips": {
+        "fa": [
+          "دستور `بشکن` (break) اجرای حلقه را به‌طور کامل متوقف کرده و از آن خارج می‌شود.",
+          "دستور `ادامه` (continue) اجرای دستورات باقی‌مانده در دور فعلی را نادیده گرفته و به دور بعدی حلقه می‌رود.",
+          "این دستورات معمولاً در ترکیب با یک شرط `اگر` (if) استفاده می‌شوند."
+        ],
+        "en": [
+          "The `break` statement completely stops the loop execution and exits it.",
+          "The `continue` statement skips the remaining instructions in the current iteration and moves to the next loop iteration.",
+          "These statements are typically used in combination with an `if` condition."
+        ],
+        "ja": [
+          "`中断` (break) ステートメントは、ループの実行を完全に停止し、終了します。",
+          "`続行` (continue) ステートメントは、現在の反復の残りの命令をスキップし、次のループ反復に進みます。",
+          "これらのステートメントは通常、`もし` (if) 条件と組み合わせて使用されます。"
+        ],
+        "ru": [
+          "Оператор `прервать` (break) полностью останавливает выполнение цикла и выходит из него.",
+          "Оператор `продолжить` (continue) пропускает оставшиеся инструкции в текущей итерации и переходит к следующей итерации цикла.",
+          "Эти операторы обычно используются в комбинации с условием `если` (if)."
+        ]
+      },
+      "prerequisites": ["core_loops_while", "core_control_flow_if"],
+      "content": [
+        {
+          "type": "text",
+          "value": {
+            "fa": "گاهی اوقات نیاز دارید بر اساس یک شرط خاص، رفتار پیش‌فرض حلقه را تغییر دهید. دستورات بشکن و ادامه این کنترل دقیق را در اختیار شما قرار می‌دهند.",
+            "en": "Sometimes you need to alter the default behavior of a loop based on a specific condition. The break and continue statements give you this precise control.",
+            "ja": "場合によっては、特定の条件に基づいてループのデフォルトの動作を変更する必要があります。中断および続行ステートメントは、この正確な制御を提供します。",
+            "ru": "Иногда вам нужно изменить поведение цикла по умолчанию на основе определенного условия. Операторы прервать и продолжить дают вам этот точный контроль."
+          }
+        },
+        {
+          "type": "code",
+          "lang": "taleforger",
+          "value": {
+            "fa": "چاپ(\"تست بشکن و ادامه:\");\nعدد num = 0;\nتاوقتی (true) {\n    num = num + 1;\n    اگر (num == 2) {\n        ادامه; // رد شدن از عدد ۲\n    }\n    چاپ(\"  شماره \" + num);\n    اگر (num == 4) {\n        بشکن;    // توقف در ۴\n    }\n}",
+            "en": "print(\"Testing break and continue:\");\nint num = 0;\nwhile (true) {\n    num = num + 1;\n    if (num == 2) {\n        continue; // Skip number 2\n    }\n    print(\"  Number \" + num);\n    if (num == 4) {\n        break;    // Stop at 4\n    }\n}",
+            "ja": "表示(\"中断と続行のテスト:\");\n整数 num = 0;\nの間 (true) {\n    num = num + 1;\n    もし (num == 2) {\n        続行; // 番号 2 をスキップ\n    }\n    表示(\"  番号 \" + num);\n    もし (num == 4) {\n        中断;    // 4 で停止\n    }\n}",
+            "ru": "печать(\"Тест прервать и продолжить:\");\nцел num = 0;\nпока (true) {\n    num = num + 1;\n    если (num == 2) {\n        продолжить; // Пропуск числа 2\n    }\n    печать(\"  Номер \" + num);\n    если (num == 4) {\n        прервать;    // Остановка на 4\n    }\n}"
+          }
+        },
+        {
+          "type": "note",
+          "style": "warning",
+          "value": {
+            "fa": "هشدار: استفاده از `بشکن` یا `ادامه` خارج از یک حلقه (while یا for) باعث خطای کامپایلر می‌شود.",
+            "en": "Warning: Using `break` or `continue` outside of a loop (while or for) will result in a compiler error.",
+            "ja": "警告: ループ (while または for) の外で `中断` または `続行` を使用すると、コンパイラエラーが発生します。",
+            "ru": "Предупреждение: Использование `прервать` или `продолжить` вне цикла (пока или для) приведет к ошибке компилятора."
+          }
+        }
+      ]
+    }
+  ]
+}

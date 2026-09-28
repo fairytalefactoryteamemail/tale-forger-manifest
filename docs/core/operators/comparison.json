@@ -1,0 +1,76 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "doc_id": "core_operators_comparison",
+  "category": "core",
+  "topic": "operators",
+  "versions": [
+    {
+      "level": "beginner",
+      "family": "i_c",
+      "core": "operators",
+      "type": "comparison",
+      "min_version": "0.1.0",
+      "max_version": "0.4.1",
+      "title": {
+        "fa": "عملگرهای مقایسه‌ای",
+        "en": "Comparison Operators",
+        "ja": "比較演算子",
+        "ru": "Операторы сравнения"
+      },
+      "quick_tips": {
+        "fa": [
+          "عملگرهای مقایسه‌ای شامل: بزرگتر (>), کوچکتر (<), بزرگتر یا مساوی (>=), کوچکتر یا مساوی (<=), مساوی (==) و نابرابر (!=) هستند.",
+          "نتیجه‌ی استفاده از این عملگرها همیشه یک مقدار منطقی (بول / bool) است.",
+          "این عملگرها پایه‌ی اصلی ساخت دستورات شرطی (اگر) و حلقه‌ها (تاوقتی) هستند."
+        ],
+        "en": [
+          "Comparison operators include: greater than (>), less than (<), greater than or equal (>=), less than or equal (<=), equal (==), and not equal (!=).",
+          "The result of using these operators is always a boolean value.",
+          "These operators are the fundamental building blocks for conditional statements (if) and loops (while)."
+        ],
+        "ja": [
+          "比較演算子には、より大きい (>), より小さい (<), 以上 (>=), 以下 (<=), 等しい (==), 等しくない (!=) が含まれます。",
+          "これらの演算子を使用した結果は、常に論理値 (bool) になります。",
+          "これらの演算子は、条件分岐 (if) やループ (while) の基本的な構成要素です。"
+        ],
+        "ru": [
+          "Операторы сравнения включают: больше (>), меньше (<), больше или равно (>=), меньше или равно (<=), равно (==) и не равно (!=).",
+          "Результатом использования этих операторов всегда является логическое значение (bool).",
+          "Эти операторы являются фундаментальными строительными блоками для условных операторов (если) и циклов (пока)."
+        ]
+      },
+      "prerequisites": ["core_variables_primitives"],
+      "content": [
+        {
+          "type": "text",
+          "value": {
+            "fa": "عملگرهای مقایسه‌ای به شما اجازه می‌دهند تا رابطه‌ی بین دو مقدار را بررسی کنید. این بررسی‌ها موتور تصمیم‌گیری برنامه‌ی شما را تشکیل می‌دهند.",
+            "en": "Comparison operators allow you to examine the relationship between two values. These checks form the decision-making engine of your program.",
+            "ja": "比較演算子を使用すると、2つの値の間の関係を調べることができます。これらのチェックは、プログラムの意思決定エンジンを形成します。",
+            "ru": "Операторы сравнения позволяют вам изучить взаимосвязь между двумя значениями. Эти проверки формируют механизм принятия решений вашей программы."
+          }
+        },
+        {
+          "type": "code",
+          "lang": "taleforger",
+          "value": {
+            "fa": "عدد سن = 25;\nبول می_تونه_رأی_بده = سن >= 18;\nچاپ(\"می‌تونه رأی بده؟ \" + می_تونه_رأی_بده);\n\nعدد a = 10;\nعدد b = 5;\nاگر (a > b) {\n    چاپ(\"a بزرگتر از b است\");\n}",
+            "en": "int age = 25;\nbool canVote = age >= 18;\nprint(\"Can vote? \" + canVote);\n\nint a = 10;\nint b = 5;\nif (a > b) {\n    print(\"a is greater than b\");\n}",
+            "ja": "整数 age = 25;\n論理 canVote = age >= 18;\n表示(\"投票可能？ \" + canVote);\n\n整数 a = 10;\n整数 b = 5;\nもし (a > b) {\n    表示(\"aはbより大きいです\");\n}",
+            "ru": "цел age = 25;\nлог canVote = age >= 18;\nпечать(\"Может голосовать? \" + canVote);\n\nцел a = 10;\nцел b = 5;\nесли (a > b) {\n    печать(\"a больше b\");\n}"
+          }
+        },
+        {
+          "type": "note",
+          "style": "info",
+          "value": {
+            "fa": "توجه: برای بررسی برابری دو مقدار، حتماً از دو علامت مساوی (==) استفاده کنید. یک علامت مساوی (=) برای مقداردهی متغیرها است.",
+            "en": "Note: To check for equality between two values, always use the double equals sign (==). A single equals sign (=) is for variable assignment.",
+            "ja": "注意: 2つの値の等しさを確認するには、必ず二重等号 (==) を使用してください。単一の等号 (=) は変数の代入用です。",
+            "ru": "Примечание: Для проверки равенства двух значений всегда используйте двойной знак равенства (==). Одинарный знак равенства (=) используется для присваивания переменных."
+          }
+        }
+      ]
+    }
+  ]
+}

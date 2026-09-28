@@ -1,0 +1,76 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "doc_id": "core_operators_logical",
+  "category": "core",
+  "topic": "operators",
+  "versions": [
+    {
+      "level": "beginner",
+      "family": "i_c",
+      "core": "operators",
+      "type": "logical",
+      "min_version": "0.4.1",
+      "max_version": "0.4.1",
+      "title": {
+        "fa": "عملگرهای منطقی",
+        "en": "Logical Operators",
+        "ja": "論理演算子",
+        "ru": "Логические операторы"
+      },
+      "quick_tips": {
+        "fa": [
+          "عملگر AND (&&): تنها در صورتی درست است که هر دو طرف شرط درست باشند.",
+          "عملگر OR (||): در صورتی درست است که حداقل یکی از طرفین شرط درست باشد.",
+          "عملگر NOT (!): مقدار منطقی را معکوس می‌کند (درست به نادرست و برعکس)."
+        ],
+        "en": [
+          "AND operator (&&): True only if both sides of the condition are true.",
+          "OR operator (||): True if at least one side of the condition is true.",
+          "NOT operator (!): Inverts the boolean value (true becomes false, and vice versa)."
+        ],
+        "ja": [
+          "AND 演算子 (&&): 条件の両側が真の場合のみ真になります。",
+          "OR 演算子 (||): 条件の少なくとも一方が真の場合に真になります。",
+          "NOT 演算子 (!): 論理値を反転させます（真は偽に、偽は真になります）。"
+        ],
+        "ru": [
+          "Оператор AND (&&): Истинно только если обе части условия истинны.",
+          "Оператор OR (||): Истинно, если хотя бы одна часть условия истинна.",
+          "Оператор NOT (!): Инвертирует логическое значение (истина становится ложью, и наоборот)."
+        ]
+      },
+      "prerequisites": ["core_operators_comparison", "core_control_flow_if"],
+      "content": [
+        {
+          "type": "text",
+          "value": {
+            "fa": "عملگرهای منطقی به شما اجازه می‌دهند چندین شرط مقایسه‌ای را با هم ترکیب کنید تا قوانین پیچیده‌تر و دقیق‌تری برای برنامه‌ی خود بسازید.",
+            "en": "Logical operators allow you to combine multiple comparison conditions to build more complex and precise rules for your program.",
+            "ja": "論理演算子を使用すると、複数の比較条件を組み合わせることで、プログラムにより複雑で正確なルールを構築できます。",
+            "ru": "Логические операторы позволяют вам объединять несколько условий сравнения для создания более сложных и точных правил для вашей программы."
+          }
+        },
+        {
+          "type": "code",
+          "lang": "taleforger",
+          "value": {
+            "fa": "بول a = درست;\nبول b = نادرست;\n\nچاپ(\"a && b = \" + (a && b));   // نادرست\nچاپ(\"a || b = \" + (a || b));   // درست\nچاپ(\"!a = \" + (!a));           // نادرست\n\nعدد x = 10;\nعدد y = 20;\n\nاگر (x > 5 && y < 30) {\n    چاپ(\"x بزرگتر از ۵ و y کوچکتر از ۳۰ است\");\n}\n\nاگر ((x > 5 && y < 30) || a) {\n    چاپ(\"شرط ترکیبی پیچیده برقرار است\");\n}",
+            "en": "bool a = true;\nbool b = false;\n\nprint(\"a && b = \" + (a && b));   // false\nprint(\"a || b = \" + (a || b));   // true\nprint(\"!a = \" + (!a));           // false\n\nint x = 10;\nint y = 20;\n\nif (x > 5 && y < 30) {\n    print(\"x is greater than 5 and y is less than 30\");\n}\n\nif ((x > 5 && y < 30) || a) {\n    print(\"Complex combined condition is met\");\n}",
+            "ja": "論理 a = true;\n論理 b = false;\n\n表示(\"a && b = \" + (a && b));   // false\n表示(\"a || b = \" + (a || b));   // true\n表示(\"!a = \" + (!a));           // false\n\n整数 x = 10;\n整数 y = 20;\n\nもし (x > 5 && y < 30) {\n    表示(\"xは5より大きく、yは30より小さいです\");\n}\n\nもし ((x > 5 && y < 30) || a) {\n    表示(\"複雑な結合条件が満たされました\");\n}",
+            "ru": "лог a = true;\nлог b = false;\n\nпечать(\"a && b = \" + (a && b));   // false\nпечать(\"a || b = \" + (a || b));   // true\nпечать(\"!a = \" + (!a));           // false\n\nцел x = 10;\nцел y = 20;\n\nесли (x > 5 && y < 30) {\n    печать(\"x больше 5 и y меньше 30\");\n}\n\nесли ((x > 5 && y < 30) || a) {\n    печать(\"Сложное комбинированное условие выполнено\");\n}"
+          }
+        },
+        {
+          "type": "note",
+          "style": "warning",
+          "value": {
+            "fa": "نکته‌ی پیشرفته: Taleforger از ارزیابی اتصال کوتاه (Short-circuit evaluation) پشتیبانی می‌کند. اگر در یک عبارت `&&` سمت چپ نادرست باشد، سمت راست اصلاً ارزیابی نمی‌شود که باعث افزایش سرعت اجرا می‌گردد.",
+            "en": "Advanced Note: Taleforger supports short-circuit evaluation. If the left side of an `&&` expression is false, the right side is not evaluated at all, improving execution speed.",
+            "ja": "高度な注意: Taleforgerは短絡評価 (short-circuit evaluation) をサポートしています。`&&` 式の左側が false の場合、右側はまったく評価されず、実行速度が向上します。",
+            "ru": "Продвинутое примечание: Taleforger поддерживает сокращенное вычисление (short-circuit evaluation). Если левая часть выражения `&&` ложна, правая часть вообще не вычисляется, что повышает скорость выполнения."
+          }
+        }
+      ]
+    }
+  ]
+}

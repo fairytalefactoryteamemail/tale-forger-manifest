@@ -1,0 +1,66 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "doc_id": "core_control_flow_if_python_style",
+  "category": "core",
+  "topic": "control_flow",
+  "versions": [
+    {
+      "level": "beginner",
+      "family": "i",
+      "core": "control_flow",
+      "type": "conditionals",
+      "min_version": "0.4.1",
+      "max_version": "0.4.1",
+      "title": {
+        "fa": "دستورات شرطی (سبک Python)",
+        "en": "Conditional Statements (Python-Style)",
+        "ja": "条件分岐 (Pythonスタイル)",
+        "ru": "Условные операторы (Стиль Python)"
+      },
+      "quick_tips": {
+        "fa": [
+          "پرانتز دور شرط حذف شده و به جای آن از علامت دو نقطه (:) استفاده می‌شود.",
+          "بدنه‌ی شرط همچنان داخل آکولاد {} قرار می‌گیرد تا ساختار بلوک‌ها واضح بماند.",
+          "این سبک برای کسانی که خوانایی و سادگی پایتون را ترجیح می‌دهند، ایده‌آل است."
+        ],
+        "en": [
+          "Parentheses around the condition are omitted, replaced by a colon (:).",
+          "The condition body still resides inside curly braces {} to keep block structure clear.",
+          "This style is ideal for those who prefer the readability and simplicity of Python."
+        ],
+        "ja": [
+          "条件の周りの括弧は省略され、コロン (:) に置き換えられます。",
+          "ブロック構造を明確にするため、条件の本体は引き続き中括弧 {} 内に配置されます。",
+          "このスタイルは、Python の可読性と簡潔さを好む人に最適です。"
+        ],
+        "ru": [
+          "Круглые скобки вокруг условия опущены и заменены двоеточием (:).",
+          "Тело условия по-прежнему находится внутри фигурных скобок {} для сохранения четкой структуры блоков.",
+          "Этот стиль идеален для тех, кто предпочитает читаемость и простоту Python."
+        ]
+      },
+      "prerequisites": ["core_operators_comparison", "core_operators_logical"],
+      "content": [
+        {
+          "type": "text",
+          "value": {
+            "fa": "در این سبک، برای کاهش نویز بصری، پرانتزهای شرط حذف شده‌اند. کامپایلر به‌طور هوشمند دو نقطه (:) را به‌عنوان شروع بلوک شرطی تشخیص می‌دهد.",
+            "en": "In this style, parentheses around the condition are removed to reduce visual noise. The compiler intelligently recognizes the colon (:) as the start of the conditional block.",
+            "ja": "このスタイルでは、視覚的なノイズを減らすために条件の周りの括弧が削除されています。コンパイラはコロン (:) を条件ブロックの開始としてインテリジェントに認識します。",
+            "ru": "В этом стиле круглые скобки вокруг условия удалены для снижения визуального шума. Компилятор интеллектуально распознает двоеточие (:) как начало условного блока."
+          }
+        },
+        {
+          "type": "code",
+          "lang": "taleforger",
+          "value": {
+            "fa": "عدد دما = 25;\nاگر دما > 30: {\n    چاپ(\"هوا گرم است\");\n} وگرنه اگر دما > 20: {\n    چاپ(\"هوا مطبوع است\");\n} وگرنه: {\n    چاپ(\"هوا سرد است\");\n}\n\n// حالت تک‌دستوری\nعدد a = 10;\nاگر a == 10: چاپ(\"a دقیقاً ۱۰ است\");",
+            "en": "int temp = 25;\nif temp > 30: {\n    print(\"It is hot\");\n} else if temp > 20: {\n    print(\"It is mild\");\n} else: {\n    print(\"It is cold\");\n}\n\n// Single-statement mode\nint a = 10;\nif a == 10: print(\"a is exactly 10\");",
+            "ja": "整数 temp = 25;\nもし temp > 30: {\n    表示(\"暑いです\");\n} それ以外 もし temp > 20: {\n    表示(\"快適です\");\n} それ以外: {\n    表示(\"寒いです\");\n}\n\n// 単一ステートメントモード\n整数 a = 10;\nもし a == 10: 表示(\"aは正確に10です\");",
+            "ru": "цел temp = 25;\nесли temp > 30: {\n    печать(\"Жарко\");\n} иначе если temp > 20: {\n    печать(\"Приятно\");\n} иначе: {\n    печать(\"Холодно\");\n}\n\n// Режим одиночного оператора\nцел a = 10;\nесли a == 10: печать(\"a ровно 10\");"
+          }
+        }
+      ]
+    }
+  ]
+}

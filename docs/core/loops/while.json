@@ -1,0 +1,66 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "doc_id": "core_loops_while",
+  "category": "core",
+  "topic": "loops",
+  "versions": [
+    {
+      "level": "beginner",
+      "family": "c",
+      "core": "loops",
+      "type": "while_loop",
+      "min_version": "0.4.0",
+      "max_version": "0.4.1",
+      "title": {
+        "fa": "حلقه تاوقتی (سبک C)",
+        "en": "While Loop (C-Style)",
+        "ja": "while ループ (Cスタイル)",
+        "ru": "Цикл пока (Стиль C)"
+      },
+      "quick_tips": {
+        "fa": [
+          "شرط حلقه حتماً باید داخل پرانتز () نوشته شود.",
+          "تا زمانی که شرط درست (true) ارزیابی شود، حلقه ادامه می‌یابد.",
+          "مراقب حلقه‌های بی‌نهایت باشید و متغیر شرط را درون حلقه به‌روز کنید."
+        ],
+        "en": [
+          "The loop condition must be strictly written inside parentheses ().",
+          "The loop continues as long as the condition evaluates to true.",
+          "Beware of infinite loops; always update the condition variable inside the loop."
+        ],
+        "ja": [
+          "ループ条件は必ず括弧 () 内に記述する必要があります。",
+          "条件が真と評価される限り、ループは続行されます。",
+          "無限ループに注意し、必ずループ内で条件変数を更新してください。"
+        ],
+        "ru": [
+          "Условие цикла должно быть строго записано в круглых скобках ().",
+          "Цикл продолжается до тех пор, пока условие оценивается как истинное.",
+          "Остерегайтесь бесконечных циклов; всегда обновляйте переменную условия внутри цикла."
+        ]
+      },
+      "prerequisites": ["core_operators_comparison"],
+      "content": [
+        {
+          "type": "text",
+          "value": {
+            "fa": "حلقه تاوقتی (while) برای زمانی استفاده می‌شود که تعداد تکرارها از قبل مشخص نیست و تکرار وابسته به یک شرط منطقی است.",
+            "en": "The while loop is used when the number of iterations is not known in advance and repetition depends on a logical condition.",
+            "ja": "while ループは、反復回数が事前にわかっておらず、反復が論理条件に依存する場合に使用されます。",
+            "ru": "Цикл пока используется, когда количество итераций заранее неизвестно и повторение зависит от логического условия."
+          }
+        },
+        {
+          "type": "code",
+          "lang": "taleforger",
+          "value": {
+            "fa": "عدد شمارنده = 0;\nچاپ(\"شمارش با تاوقتی:\");\nتاوقتی (شمارنده < 3) {\n    چاپ(\"  عدد \" + شمارنده);\n    شمارنده = شمارنده + 1;\n}\n\n// حالت تک‌دستوری\nشمارنده = 0;\nتاوقتی (شمارنده < 2) شمارنده = شمارنده + 1;\nچاپ(\"پایان: \" + شمارنده);",
+            "en": "int counter = 0;\nprint(\"Counting with while:\");\nwhile (counter < 3) {\n    print(\"  Number \" + counter);\n    counter = counter + 1;\n}\n\n// Single-statement mode\ncounter = 0;\nwhile (counter < 2) counter = counter + 1;\nprint(\"End: \" + counter);",
+            "ja": "整数 counter = 0;\n表示(\"while でのカウント:\");\nの間 (counter < 3) {\n    表示(\"  番号 \" + counter);\n    counter = counter + 1;\n}\n\n// 単一ステートメントモード\ncounter = 0;\nの間 (counter < 2) counter = counter + 1;\n表示(\"終了: \" + counter);",
+            "ru": "цел counter = 0;\nпечать(\"Подсчет с помощью пока:\");\nпока (counter < 3) {\n    печать(\"  Число \" + counter);\n    counter = counter + 1;\n}\n\n// Режим одиночного оператора\ncounter = 0;\nпока (counter < 2) counter = counter + 1;\nпечать(\"Конец: \" + counter);"
+          }
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,80 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "doc_id": "core_oop_classes",
+  "category": "core",
+  "topic": "oop",
+  "versions": [
+    {
+      "level": "intermediate",
+      "family": "i_c",
+      "core": "oop",
+      "type": "class_declaration",
+      "min_version": "0.1.0",
+      "max_version": "0.4.1",
+      "title": {
+        "fa": "کلاس‌ها و شیءگرایی",
+        "en": "Classes & Object-Oriented Programming",
+        "ja": "クラスとオブジェクト指向",
+        "ru": "Классы и ООП"
+      },
+      "quick_tips": {
+        "fa": [
+          "کلاس‌ها با کلمه کلیدی `کلاس` (یا `class`) تعریف می‌شوند.",
+          "ویژگی‌ها (Fields) و متدها (Methods) درون بلوک آکولاد کلاس قرار می‌گیرند.",
+          "برای تعیین نوع خروجی متدها، از سینتکس `->` استفاده می‌شود.",
+          "کلمه کلیدی `این` (یا `this`) به نمونه فعلی شیء اشاره دارد."
+        ],
+        "en": [
+          "Classes are defined using the `class` keyword.",
+          "Fields and methods are placed within the curly brace block of the class.",
+          "The `->` syntax is used to specify the return type of methods.",
+          "The `this` keyword refers to the current instance of the object."
+        ],
+        "ja": [
+          "クラスは `class` キーワードを使用して定義されます。",
+          "フィールドとメソッドは、クラスの中括弧ブロック内に配置されます。",
+          "メソッドの戻り値の型を指定するには、`->` 構文が使用されます。",
+          "`this` キーワードは、オブジェクトの現在のインスタンスを参照します。"
+        ],
+        "ru": [
+          "Классы определяются с помощью ключевого слова `класс` (или `class`).",
+          "Поля и методы размещаются внутри блока фигурных скобок класса.",
+          "Для указания типа возврата методов используется синтаксис `->`.",
+          "Ключевое слово `это` (или `this`) ссылается на текущий экземпляр объекта."
+        ]
+      },
+      "prerequisites": ["core_variables_primitives", "core_functions_global"],
+      "content": [
+        {
+          "type": "text",
+          "value": {
+            "fa": "شیءگرایی در Taleforger به شما اجازه می‌دهد داده‌ها و رفتارها را در واحدهای منطقی به نام کلاس کپسوله‌سازی کنید. این کار مدیریت کدهای پیچیده را آسان‌تر می‌کند.",
+            "en": "Object-oriented programming in Taleforger allows you to encapsulate data and behaviors into logical units called classes. This makes managing complex code easier.",
+            "ja": "Taleforgerのオブジェクト指向プログラミングを使用すると、データと動作をクラスと呼ばれる論理的なユニットにカプセル化できます。これにより、複雑なコードの管理が容易になります。",
+            "ru": "Объектно-ориентированное программирование в Taleforger позволяет инкапсулировать данные и поведение в логические единицы, называемые классами. Это упрощает управление сложным кодом."
+          }
+        },
+        {
+          "type": "code",
+          "lang": "taleforger",
+          "value": {
+            "fa": "کلاس Calculator {\n    عدد factor;\n\n    تابع multiply(عدد x) -> عدد {\n        برگردان این.factor * x;\n    }\n}",
+            "en": "class Calculator {\n    int factor;\n\n    func multiply(int x) -> int {\n        return this.factor * x;\n    }\n}",
+            "ja": "クラス Calculator {\n    整数 factor;\n\n    関数 multiply(整数 x) -> 整数 {\n        返す 自身.factor * x;\n    }\n}",
+            "ru": "класс Calculator {\n    цел factor;\n\n    функ multiply(цел x) -> цел {\n        возврат это.factor * x;\n    }\n}"
+          }
+        },
+        {
+          "type": "note",
+          "style": "warning",
+          "value": {
+            "fa": "توجه: در نسخه فعلی MVP، دسترسی به ویژگی‌ها (Fields) به‌صورت عمومی (Public) است. مکانیزم‌های کپسوله‌سازی پیشرفته (مانند private/protected) در نسخه‌های آینده اضافه خواهند شد.",
+            "en": "Note: In the current MVP version, access to fields is public. Advanced encapsulation mechanisms (like private/protected) will be added in future versions.",
+            "ja": "注意: 現在のMVPバージョンでは、フィールドへのアクセスはパブリックです。高度なカプセル化メカニズム（private/protectedなど）は将来のバージョンで追加されます。",
+            "ru": "Примечание: В текущей версии MVP доступ к полям является публичным. Продвинутые механизмы инкапсуляции (такие как private/protected) будут добавлены в будущих версиях."
+          }
+        }
+      ]
+    }
+  ]
+}

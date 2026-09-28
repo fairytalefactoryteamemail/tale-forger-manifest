@@ -1,0 +1,66 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "doc_id": "core_loops_while_python_style",
+  "category": "core",
+  "topic": "loops",
+  "versions": [
+    {
+      "level": "beginner",
+      "family": "i",
+      "core": "loops",
+      "type": "while_loop",
+      "min_version": "0.4.1",
+      "max_version": "0.4.1",
+      "title": {
+        "fa": "حلقه تاوقتی (سبک Python)",
+        "en": "While Loop (Python-Style)",
+        "ja": "while ループ (Pythonスタイル)",
+        "ru": "Цикл пока (Стиль Python)"
+      },
+      "quick_tips": {
+        "fa": [
+          "شرط حلقه بدون پرانتز و با علامت دو نقطه (:) نوشته می‌شود.",
+          "بدنه‌ی حلقه برای حفظ خوانایی داخل آکولاد {} قرار می‌گیرد.",
+          "این سبک نویز بصری پرانتزها را حذف کرده و کد را تمیزتر می‌کند."
+        ],
+        "en": [
+          "The loop condition is written without parentheses, followed by a colon (:).",
+          "The loop body remains inside curly braces {} to maintain readability.",
+          "This style removes the visual noise of parentheses, making the code cleaner."
+        ],
+        "ja": [
+          "ループ条件は括弧なしで記述され、コロン (:) が続きます。",
+          "可読性を維持するため、ループ本体は中括弧 {} 内に残ります。",
+          "このスタイルは括弧の視覚的なノイズを削除し、コードをよりクリーンにします。"
+        ],
+        "ru": [
+          "Условие цикла записывается без круглых скобок, за ним следует двоеточие (:).",
+          "Тело цикла остается внутри фигурных скобок {} для сохранения читаемости.",
+          "Этот стиль удаляет визуальный шум круглых скобок, делая код чище."
+        ]
+      },
+      "prerequisites": ["core_operators_comparison"],
+      "content": [
+        {
+          "type": "text",
+          "value": {
+            "fa": "در این سبک، حلقه تاوقتی با حذف پرانتز و استفاده از دو نقطه، ظاهری مینیمال و خوانا پیدا می‌کند، در حالی که قدرت و منطق یکسانی با سبک C دارد.",
+            "en": "In this style, the while loop gains a minimal and readable appearance by omitting parentheses and using a colon, while retaining the same power and logic as the C-style.",
+            "ja": "このスタイルでは、括弧を省略しコロンを使用することで、while ループは最小限で読みやすい外観を得ますが、Cスタイルと同じパワーと論理を保持します。",
+            "ru": "В этом стиле цикл пока приобретает минималистичный и читаемый вид за счет опускания круглых скобок и использования двоеточия, сохраняя при этом ту же мощность и логику, что и стиль C."
+          }
+        },
+        {
+          "type": "code",
+          "lang": "taleforger",
+          "value": {
+            "fa": "عدد شمارنده = 0;\nچاپ(\"شمارش با تاوقتی:\");\nتاوقتی شمارنده < 3: {\n    چاپ(\"  عدد \" + شمارنده);\n    شمارنده = شمارنده + 1;\n}\n\n// حالت تک‌دستوری\nشمارنده = 0;\nتاوقتی شمارنده < 2: شمارنده = شمارنده + 1;\nچاپ(\"پایان: \" + شمارنده);",
+            "en": "int counter = 0;\nprint(\"Counting with while:\");\nwhile counter < 3: {\n    print(\"  Number \" + counter);\n    counter = counter + 1;\n}\n\n// Single-statement mode\ncounter = 0;\nwhile counter < 2: counter = counter + 1;\nprint(\"End: \" + counter);",
+            "ja": "整数 counter = 0;\n表示(\"while でのカウント:\");\nの間 counter < 3: {\n    表示(\"  番号 \" + counter);\n    counter = counter + 1;\n}\n\n// 単一ステートメントモード\ncounter = 0;\nの間 counter < 2: counter = counter + 1;\n表示(\"終了: \" + counter);",
+            "ru": "цел counter = 0;\nпечать(\"Подсчет с помощью пока:\");\nпока counter < 3: {\n    печать(\"  Число \" + counter);\n    counter = counter + 1;\n}\n\n// Режим одиночного оператора\ncounter = 0;\nпока counter < 2: counter = counter + 1;\nпечать(\"Конец: \" + counter);"
+          }
+        }
+      ]
+    }
+  ]
+}

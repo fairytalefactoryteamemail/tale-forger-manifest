@@ -1,0 +1,99 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "doc_id": "core_variables_primitives",
+  "category": "core",
+  "topic": "variables",
+  "versions": [
+    {
+      "level": "beginner",
+      "family": "i_c",
+      "core": "variable",
+      "type": "primitive_types",
+      "min_version": "0.1.0",
+      "max_version": "0.4.1",
+      "title": {
+        "fa": "متغیرهای پایه و انواع داده اولیه",
+        "en": "Base Variables & Primitive Types",
+        "ja": "基本変数とプリミティブ型",
+        "ru": "Базовые переменные и примитивные типы"
+      },
+      "quick_tips": {
+        "fa": [
+          "پشتیبانی از ۵ نوع داده پایه: عدد (int)، اعشار (float)، رشته (string)، بول (bool) و sci_decimal.",
+          "نوع sci_decimal برای محاسبات مالی یا علمی با دقت بسیار بالا (تا ۱۹ رقم اعشار) طراحی شده است.",
+          "در Taleforger، تعریف نوع متغیرها صریح (Explicit) است و کامپایلر نوع‌دهی خودکار انجام نمی‌دهد.",
+          "رشته‌ها به‌راحتی با عملگر + به یکدیگر یا به انواع داده دیگر متصل می‌شوند."
+        ],
+        "en": [
+          "Supports 5 primitive types: int, float, string, bool, and sci_decimal.",
+          "The sci_decimal type is designed for high-precision financial or scientific calculations (up to 19 decimal digits).",
+          "In Taleforger, variable typing is explicit; the compiler does not perform automatic type inference in this version.",
+          "Strings can be seamlessly concatenated with each other or other data types using the + operator."
+        ],
+        "ja": [
+          "5つの基本型をサポート: 整数 (int)、浮動小数点 (float)、文字列 (string)、論理型 (bool)、sci_decimal。",
+          "sci_decimal型は、高精度な財務または科学計算（最大19桁の小数）用に設計されています。",
+          "Taleforgerでは、変数の型付けは明示的であり、このバージョンではコンパイラによる自動型推論は行われません。",
+          "文字列は、+ 演算子を使用して他の文字列やデータ型とシームレスに連結できます。"
+        ],
+        "ru": [
+          "Поддерживает 5 базовых типов: целое (int), вещественное (float), строка (string), логическое (bool) и sci_decimal.",
+          "Тип sci_decimal разработан для высокоточных финансовых или научных вычислений (до 19 знаков после запятой).",
+          "В Taleforger типизация переменных является явной; компилятор не выполняет автоматический вывод типов в этой версии.",
+          "Строки можно легко объединять друг с другом или с другими типами данных с помощью оператора +."
+        ]
+      },
+      "prerequisites": [],
+      "content": [
+        {
+          "type": "text",
+          "value": {
+            "fa": "برای تعریف یک متغیر، ابتدا نوع داده، سپس نام متغیر و در نهایت مقدار آن را مشخص می‌کنیم. در ادامه نمونه‌ای از تعریف تمام انواع داده پایه را مشاهده می‌کنید.",
+            "en": "To declare a variable, specify the data type, followed by the variable name, and finally its value. Below is an example of declaring all primitive data types.",
+            "ja": "変数を宣言するには、データ型、変数名、そして値の順に指定します。以下は、すべての基本データ型を宣言する例です。",
+            "ru": "Чтобы объявить переменную, укажите тип данных, затем имя переменной и, наконец, ее значение. Ниже приведен пример объявления всех примитивных типов данных."
+          }
+        },
+        {
+          "type": "code",
+          "lang": "taleforger",
+          "value": {
+            "fa": "عدد سن = 25;\nاعشار پی = 3.14;\nرشته نام = \"علی\";\nبول توسعه_دهنده = درست;\nsci_decimal دقیق = 1.234567890123456789;",
+            "en": "int age = 25;\nfloat pi = 3.14;\nstring name = \"Ali\";\nbool isDev = true;\nsci_decimal precise = 1.234567890123456789;",
+            "ja": "整数 age = 25;\n浮動 pi = 3.14;\n文字列 name = \"Ali\";\n論理 isDev = true;\nsci_decimal precise = 1.234567890123456789;",
+            "ru": "цел age = 25;\nвещ pi = 3.14;\nстр name = \"Ali\";\nлог isDev = true;\nsci_decimal precise = 1.234567890123456789;"
+          }
+        },
+        {
+          "type": "text",
+          "value": {
+            "fa": "شما می‌توانید روی متغیرهای عددی عملیات ریاضی انجام دهید و نتیجه یا متغیرها را مستقیماً با رشته‌ها ترکیب کرده و چاپ کنید.",
+            "en": "You can perform mathematical operations on numeric variables and directly concatenate the results or variables with strings to print them.",
+            "ja": "数値変数に対して数学演算を実行し、結果や変数を文字列と直接連結して出力できます。",
+            "ru": "Вы можете выполнять математические операции с числовыми переменными и напрямую объединять результаты или переменные со строками для их вывода."
+          }
+        },
+        {
+          "type": "code",
+          "lang": "taleforger",
+          "value": {
+            "fa": "عدد دوبرابر_سن = سن * 2;\nرشته پیام = \"سلام \" + نام + \"!\";\n\nچاپ(پیام);\nچاپ(\"سن دو برابر شده: \" + دوبرابر_سن);\nچاپ(\"مقدار دقیق: \" + دقیق);",
+            "en": "int doubleAge = age * 2;\nstring message = \"Hello \" + name + \"!\";\n\nprint(message);\nprint(\"Doubled age: \" + doubleAge);\nprint(\"Precise value: \" + precise);",
+            "ja": "整数 doubleAge = age * 2;\n文字列 message = \"こんにちは \" + name + \"!\";\n\n表示(message);\n表示(\"2倍の年齢: \" + doubleAge);\n表示(\"正確な値: \" + precise);",
+            "ru": "цел doubleAge = age * 2;\nстр message = \"Привет \" + name + \"!\";\n\nпечать(message);\nпечать(\"Удвоенный возраст: \" + doubleAge);\nпечать(\"Точное значение: \" + precise);"
+          }
+        },
+        {
+          "type": "note",
+          "style": "info",
+          "value": {
+            "fa": "نکته حرفه‌ای: برای محاسباتی که کوچکترین خطای اعشاری در آن‌ها فاجعه‌بار است (مانند سیستم‌های بانکی یا محاسبات مدارهای فضایی)، همیشه از نوع sci_decimal به جای float استفاده کنید.",
+            "en": "Pro Tip: For calculations where even the slightest decimal error is catastrophic (such as banking systems or spacecraft trajectory calculations), always use sci_decimal instead of float.",
+            "ja": "プロのヒント: わずかな小数の誤差も致命的となる計算（銀行システムや宇宙船の軌道計算など）では、floatの代わりに常にsci_decimalを使用してください。",
+            "ru": "Профессиональный совет: Для вычислений, где даже малейшая десятичная ошибка катастрофична (например, банковские системы или расчеты траектории космических аппаратов), всегда используйте sci_decimal вместо float."
+          }
+        }
+      ]
+    }
+  ]
+}

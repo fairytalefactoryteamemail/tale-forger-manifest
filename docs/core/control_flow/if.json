@@ -1,0 +1,66 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "doc_id": "core_control_flow_if",
+  "category": "core",
+  "topic": "control_flow",
+  "versions": [
+    {
+      "level": "beginner",
+      "family": "c",
+      "core": "control_flow",
+      "type": "conditionals",
+      "min_version": "0.4.0",
+      "max_version": "0.4.1",
+      "title": {
+        "fa": "دستورات شرطی (سبک C)",
+        "en": "Conditional Statements (C-Style)",
+        "ja": "条件分岐 (Cスタイル)",
+        "ru": "Условные операторы (Стиль C)"
+      },
+      "quick_tips": {
+        "fa": [
+          "شرط حتماً باید داخل پرانتز () قرار گیرد.",
+          "پشتیبانی از زنجیره‌ی اگر / وگرنه اگر / وگرنه (if / else if / else).",
+          "برای دستورات تک‌خطی، می‌توان از حذف آکولاد {} استفاده کرد."
+        ],
+        "en": [
+          "The condition must be strictly enclosed in parentheses ().",
+          "Supports chaining: if / else if / else.",
+          "Curly braces {} can be omitted for single-statement blocks."
+        ],
+        "ja": [
+          "条件は必ず括弧 () で囲む必要があります。",
+          "if / else if / else のチェーンをサポートします。",
+          "単一ステートメントの場合、中括弧 {} を省略できます。"
+        ],
+        "ru": [
+          "Условие должно быть строго заключено в круглые скобки ().",
+          "Поддерживает цепочку: если / иначе если / иначе.",
+          "Фигурные скобки {} можно опустить для блоков с одним оператором."
+        ]
+      },
+      "prerequisites": ["core_operators_comparison", "core_operators_logical"],
+      "content": [
+        {
+          "type": "text",
+          "value": {
+            "fa": "در این سبک، ساختار شرطی دقیقاً مشابه زبان‌های خانواده C (مانند C++، C# یا Java) است. شرط داخل پرانتز ارزیابی می‌شود.",
+            "en": "In this style, the conditional structure is exactly like C-family languages (such as C++, C#, or Java). The condition is evaluated inside parentheses.",
+            "ja": "このスタイルでは、条件構造はCファミリー言語（C++、C#、Javaなど）と全く同じです。条件は括弧内で評価されます。",
+            "ru": "В этом стиле условная структура в точности повторяет языки семейства C (такие как C++, C# или Java). Условие вычисляется внутри круглых скобок."
+          }
+        },
+        {
+          "type": "code",
+          "lang": "taleforger",
+          "value": {
+            "fa": "عدد دما = 25;\nاگر (دما > 30) {\n    چاپ(\"هوا گرم است\");\n} وگرنه اگر (دما > 20) {\n    چاپ(\"هوا مطبوع است\");\n} وگرنه {\n    چاپ(\"هوا سرد است\");\n}\n\n// حالت تک‌دستوری\nعدد a = 10;\nاگر (a == 10) چاپ(\"a دقیقاً ۱۰ است\");",
+            "en": "int temp = 25;\nif (temp > 30) {\n    print(\"It is hot\");\n} else if (temp > 20) {\n    print(\"It is mild\");\n} else {\n    print(\"It is cold\");\n}\n\n// Single-statement mode\nint a = 10;\nif (a == 10) print(\"a is exactly 10\");",
+            "ja": "整数 temp = 25;\nもし (temp > 30) {\n    表示(\"暑いです\");\n} それ以外 もし (temp > 20) {\n    表示(\"快適です\");\n} それ以外 {\n    表示(\"寒いです\");\n}\n\n// 単一ステートメントモード\n整数 a = 10;\nもし (a == 10) 表示(\"aは正確に10です\");",
+            "ru": "цел temp = 25;\nесли (temp > 30) {\n    печать(\"Жарко\");\n} иначе если (temp > 20) {\n    печать(\"Приятно\");\n} иначе {\n    печать(\"Холодно\");\n}\n\n// Режим одиночного оператора\nцел a = 10;\nесли (a == 10) печать(\"a ровно 10\");"
+          }
+        }
+      ]
+    }
+  ]
+}

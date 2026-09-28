@@ -1,0 +1,76 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "doc_id": "core_functions_builtin",
+  "category": "core",
+  "topic": "functions",
+  "versions": [
+    {
+      "level": "beginner",
+      "family": "i_c",
+      "core": "functions",
+      "type": "builtin",
+      "min_version": "0.1.0",
+      "max_version": "0.4.1",
+      "title": {
+        "fa": "توابع درون‌ساخت (چاپ و طول)",
+        "en": "Built-in Functions (print & length)",
+        "ja": "組み込み関数 (print と length)",
+        "ru": "Встроенные функции (print и length)"
+      },
+      "quick_tips": {
+        "fa": [
+          "توابع درون‌ساخت نیازی به فراخوانی یا ایمپورت کتابخانه خاصی ندارند.",
+          "تابع چاپ () برای نمایش خروجی در کنسول یا ترمینال استفاده می‌شود.",
+          "تابع طول () می‌تواند تعداد کاراکترهای یک رشته یا تعداد آیتم‌های یک لیست را برگرداند."
+        ],
+        "en": [
+          "Built-in functions do not require any library imports or special declarations.",
+          "The print() function is used to display output in the console or terminal.",
+          "The length() function can return the number of characters in a string or the number of items in a list."
+        ],
+        "ja": [
+          "組み込み関数は、ライブラリのインポートや特別な宣言を必要としません。",
+          "print() 関数は、コンソールまたはターミナルに出力を表示するために使用されます。",
+          "length() 関数は、文字列の文字数またはリストのアイテム数を返すことができます。"
+        ],
+        "ru": [
+          "Встроенные функции не требуют импорта библиотек или специальных объявлений.",
+          "Функция печать() используется для вывода данных в консоль или терминал.",
+          "Функция длина() может возвращать количество символов в строке или количество элементов в списке."
+        ]
+      },
+      "prerequisites": ["core_variables_primitives"],
+      "content": [
+        {
+          "type": "text",
+          "value": {
+            "fa": "زبان Taleforger دو تابع اصلی را به‌صورت پیش‌فرض در اختیار شما قرار می‌دهد تا بدون هیچ تنظیمات اضافی، شروع به کدنویسی کنید.",
+            "en": "Taleforger provides two main functions by default, allowing you to start coding without any additional setup.",
+            "ja": "Taleforgerは、追加の設定なしでコーディングを開始できるように、デフォルトで2つの主要な関数を提供します。",
+            "ru": "Taleforger предоставляет две основные функции по умолчанию, позволяя вам начать программирование без дополнительных настроек."
+          }
+        },
+        {
+          "type": "code",
+          "lang": "taleforger",
+          "value": {
+            "fa": "رشته متن_تست = \"تیل فورجر\";\nلیست اعداد = [10, 20, 30];\n\nچاپ(\"نام زبان: \" + متن_تست);\nچاپ(\"طول رشته: \" + طول(متن_تست));\nچاپ(\"تعداد اعداد در لیست: \" + طول(اعداد));",
+            "en": "string testText = \"Taleforger\";\nlist numbers = [10, 20, 30];\n\nprint(\"Language name: \" + testText);\nprint(\"String length: \" + length(testText));\nprint(\"Number of items in list: \" + length(numbers));",
+            "ja": "文字列 testText = \"Taleforger\";\nlist numbers = [10, 20, 30];\n\n表示(\"言語名: \" + testText);\n表示(\"文字列の長さ: \" + 長さ(testText));\n表示(\"リスト内のアイテム数: \" + 長さ(numbers));",
+            "ru": "стр testText = \"Taleforger\";\nlist numbers = [10, 20, 30];\n\nпечать(\"Название языка: \" + testText);\nпечать(\"Длина строки: \" + длина(testText));\nпечать(\"Количество элементов в списке: \" + длина(numbers));"
+          }
+        },
+        {
+          "type": "note",
+          "style": "warning",
+          "value": {
+            "fa": "توجه: تابع طول () فقط روی داده‌هایی کار می‌کند که مفهوم \"اندازه\" دارند (مثل رشته‌ها و لیست‌ها). استفاده از آن روی متغیرهای عددی (مثل int یا float) باعث خطای کامپایلر می‌شود.",
+            "en": "Note: The length() function only works on data types that have a concept of \"size\" (like strings and lists). Using it on numeric variables (like int or float) will cause a compiler error.",
+            "ja": "注意: length() 関数は、「サイズ」の概念を持つデータ型（文字列やリストなど）でのみ機能します。数値変数（intやfloatなど）で使用すると、コンパイラエラーが発生します。",
+            "ru": "Примечание: Функция длина() работает только с типами данных, имеющими понятие «размер» (например, строки и списки). Использование ее с числовыми переменными (например, int или float) вызовет ошибку компилятора."
+          }
+        }
+      ]
+    }
+  ]
+}

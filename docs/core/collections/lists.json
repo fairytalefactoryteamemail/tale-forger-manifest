@@ -1,0 +1,76 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "doc_id": "core_collections_lists",
+  "category": "core",
+  "topic": "collections",
+  "versions": [
+    {
+      "level": "beginner",
+      "family": "i_c",
+      "core": "collections",
+      "type": "list",
+      "min_version": "0.1.0",
+      "max_version": "0.4.1",
+      "title": {
+        "fa": "لیست‌ها و آرایه‌ها",
+        "en": "Lists & Arrays",
+        "ja": "リストと配列",
+        "ru": "Списки и массивы"
+      },
+      "quick_tips": {
+        "fa": [
+          "لیست‌ها با استفاده از براکت [] و مقادیر جدا شده با کاما تعریف می‌شوند.",
+          "شما می‌توانید با استفاده از عملگر +، دو لیست را به هم الحاق کنید یا آیتم جدیدی اضافه نمایید.",
+          "دسترسی به عناصر لیست از طریق اندیس‌گذاری (Index) از صفر شروع می‌شود."
+        ],
+        "en": [
+          "Lists are defined using square brackets [] with comma-separated values.",
+          "You can concatenate two lists or add new items using the + operator.",
+          "Accessing list elements via indexing starts from zero."
+        ],
+        "ja": [
+          "リストは、カンマ区切りの値を角括弧 [] で囲んで定義します。",
+          "+ 演算子を使用して、2つのリストを連結したり、新しいアイテムを追加したりできます。",
+          "インデックスを使用したリスト要素へのアクセスは 0 から始まります。"
+        ],
+        "ru": [
+          "Списки определяются с использованием квадратных скобок [] и значений, разделенных запятыми.",
+          "Вы можете объединять два списка или добавлять новые элементы с помощью оператора +.",
+          "Доступ к элементам списка через индексацию начинается с нуля."
+        ]
+      },
+      "prerequisites": ["core_variables_primitives", "core_functions_builtin"],
+      "content": [
+        {
+          "type": "text",
+          "value": {
+            "fa": "لیست‌ها در Taleforger ساختار داده‌ای پویا و ساده برای نگهداری مجموعه‌ای از مقادیر هستند. شما می‌توانید به راحتی آن‌ها را ایجاد، ترکیب و پیمایش کنید.",
+            "en": "Lists in Taleforger are a dynamic and simple data structure for holding a collection of values. You can easily create, combine, and iterate over them.",
+            "ja": "Taleforgerのリストは、値のコレクションを保持するための動的でシンプルなデータ構造です。簡単に作成、結合、反復処理ができます。",
+            "ru": "Списки в Taleforger — это динамическая и простая структура данных для хранения набора значений. Вы можете легко создавать, объединять и перебирать их."
+          }
+        },
+        {
+          "type": "code",
+          "lang": "taleforger",
+          "value": {
+            "fa": "لیست میوه‌ها = [\"سیب\", \"موز\", \"پرتقال\"];\nچاپ(\"لیست میوه‌ها: \" + میوه‌ها);\n\nمیوه‌ها = میوه‌ها + [\"انگور\"];\nچاپ(\"لیست جدید: \" + میوه‌ها);\n\nعدد طول_اول = طول(میوه‌ها[0]);\nچاپ(\"طول اولین میوه: \" + طول_اول);",
+            "en": "list fruits = [\"Apple\", \"Banana\", \"Orange\"];\nprint(\"Fruits list: \" + fruits);\n\nfruits = fruits + [\"Grape\"];\nprint(\"New list: \" + fruits);\n\nint firstLen = length(fruits[0]);\nprint(\"Length of first fruit: \" + firstLen);",
+            "ja": "list fruits = [\"りんご\", \"バナナ\", \"オレンジ\"];\n表示(\"果物リスト: \" + fruits);\n\nfruits = fruits + [\"ぶどう\"];\n表示(\"新しいリスト: \" + fruits);\n\n整数 firstLen = 長さ(fruits[0]);\n表示(\"最初の果物の長さ: \" + firstLen);",
+            "ru": "list fruits = [\"Яблоко\", \"Банан\", \"Апельсин\"];\nпечать(\"Список фруктов: \" + fruits);\n\nfruits = fruits + [\"Виноград\"];\nпечать(\"Новый список: \" + fruits);\n\nцел firstLen = длина(fruits[0]);\nпечать(\"Длина первого фрукта: \" + firstLen);"
+          }
+        },
+        {
+          "type": "note",
+          "style": "info",
+          "value": {
+            "fa": "نکته: در حال حاضر، لیست‌ها در Taleforger همگن (Homogeneous) هستند، به این معنی که بهتر است تمام عناصر یک لیست از یک نوع داده باشند تا از خطاهای غیرمنتظره جلوگیری شود.",
+            "en": "Note: Currently, lists in Taleforger are intended to be homogeneous, meaning all elements in a list should ideally be of the same data type to prevent unexpected errors.",
+            "ja": "注意: 現在、Taleforgerのリストは均質（すべての要素が同じデータ型であることが理想的）であることが意図されており、予期しないエラーを防ぎます。",
+            "ru": "Примечание: В настоящее время списки в Taleforger предполагаются однородными, то есть все элементы в списке в идеале должны быть одного типа данных для предотвращения неожиданных ошибок."
+          }
+        }
+      ]
+    }
+  ]
+}

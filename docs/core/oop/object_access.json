@@ -1,0 +1,66 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "doc_id": "core_oop_object_access",
+  "category": "core",
+  "topic": "oop",
+  "versions": [
+    {
+      "level": "intermediate",
+      "family": "i_c",
+      "core": "oop",
+      "type": "object_access",
+      "min_version": "0.1.0",
+      "max_version": "0.4.1",
+      "title": {
+        "fa": "ساخت و دسترسی به اشیاء",
+        "en": "Object Construction & Member Access",
+        "ja": "オブジェクト生成とメンバーアクセス",
+        "ru": "Создание объектов и доступ к членам"
+      },
+      "quick_tips": {
+        "fa": [
+          "برای ساخت یک شیء، از نام کلاس به دنبال پرانتز () استفاده کنید.",
+          "برای دسترسی به ویژگی‌ها یا فراخوانی متدهای یک شیء، از عملگر نقطه (.) استفاده نمایید.",
+          "مقادیر ویژگی‌ها را می‌توان پس از ساخت شیء، مستقیماً تغییر داد."
+        ],
+        "en": [
+          "To instantiate an object, use the class name followed by parentheses ().",
+          "Use the dot operator (.) to access properties or call methods of an object.",
+          "Property values can be modified directly after the object is created."
+        ],
+        "ja": [
+          "オブジェクトをインスタンス化するには、クラス名の後に括弧 () を使用します。",
+          "オブジェクトのプロパティにアクセスしたり、メソッドを呼び出したりするには、ドット演算子 (.) を使用します。",
+          "プロパティの値は、オブジェクトが作成された後に直接変更できます。"
+        ],
+        "ru": [
+          "Чтобы создать экземпляр объекта, используйте имя класса, за которым следуют скобки ().",
+          "Используйте оператор точки (.) для доступа к свойствам или вызова методов объекта.",
+          "Значения свойств можно изменять напрямую после создания объекта."
+        ]
+      },
+      "prerequisites": ["core_oop_classes"],
+      "content": [
+        {
+          "type": "text",
+          "value": {
+            "fa": "پس از تعریف یک کلاس، مرحله بعدی ایجاد نمونه‌ای (Instance) از آن کلاس و تعامل با اعضای آن است. این کار با استفاده از عملگر نقطه انجام می‌شود.",
+            "en": "After defining a class, the next step is to create an instance of that class and interact with its members. This is done using the dot operator.",
+            "ja": "クラスを定義した後、次のステップはそのクラスのインスタンスを作成し、そのメンバーと対話することです。これはドット演算子を使用して行われます。",
+            "ru": "После определения класса следующим шагом является создание экземпляра этого класса и взаимодействие с его членами. Это делается с помощью оператора точки."
+          }
+        },
+        {
+          "type": "code",
+          "lang": "taleforger",
+          "value": {
+            "fa": "Calculator calc = Calculator();\ncalc.factor = 10;\nچاپ(calc.multiply(5));   // خروجی: 50\n\ncalc.factor = 20;\nچاپ(calc.multiply(3));   // خروجی: 60",
+            "en": "Calculator calc = Calculator();\ncalc.factor = 10;\nprint(calc.multiply(5));   // Output: 50\n\ncalc.factor = 20;\nprint(calc.multiply(3));   // Output: 60",
+            "ja": "Calculator calc = Calculator();\ncalc.factor = 10;\n表示(calc.multiply(5));   // 出力: 50\n\ncalc.factor = 20;\n表示(calc.multiply(3));   // 出力: 60",
+            "ru": "Calculator calc = Calculator();\ncalc.factor = 10;\nпечать(calc.multiply(5));   // Вывод: 50\n\ncalc.factor = 20;\nпечать(calc.multiply(3));   // Вывод: 60"
+          }
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,76 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "doc_id": "core_loops_for_step",
+  "category": "core",
+  "topic": "loops",
+  "versions": [
+    {
+      "level": "beginner",
+      "family": "i_c",
+      "core": "loops",
+      "type": "for_loop",
+      "min_version": "0.4.0",
+      "max_version": "0.4.1",
+      "title": {
+        "fa": "حلقه شمارشی با گام هوشمند",
+        "en": "Counting Loop with Smart Step",
+        "ja": "スマートステップ付きカウントループ",
+        "ru": "Счетный цикл с умным шагом"
+      },
+      "quick_tips": {
+        "fa": [
+          "حلقه برای (for) در Taleforger نیازی به نوشتن دستی i++ یا i-- ندارد.",
+          "اگر بخش 'گام' (step) خالی گذاشته شود، کامپایلر به‌صورت هوشمند جهت (صعودی یا نزولی) را از اعداد شروع و پایان تشخیص می‌دهد.",
+          "می‌توانید گام را به‌صورت اختیاری مشخص کنید (مثلاً گام 2 یا گام 3)."
+        ],
+        "en": [
+          "The for loop in Taleforger does not require manually writing i++ or i--.",
+          "If the 'step' section is left empty, the compiler intelligently detects the direction (ascending or descending) from the start and end values.",
+          "You can optionally specify the step (e.g., step 2 or step 3)."
+        ],
+        "ja": [
+          "Taleforgerのforループでは、i++ や i-- を手動で記述する必要はありません。",
+          "「ステップ」セクションが空の場合、コンパイラは開始値と終了値から方向（昇順または降順）をインテリジェントに検出します。",
+          "ステップはオプションで指定できます（例：ステップ 2 または ステップ 3）。"
+        ],
+        "ru": [
+          "Цикл для в Taleforger не требует ручного написания i++ или i--.",
+          "Если раздел «шаг» оставлен пустым, компилятор интеллектуально определяет направление (по возрастанию или убыванию) из начального и конечного значений.",
+          "Вы можете при желании указать шаг (например, шаг 2 или шаг 3)."
+        ]
+      },
+      "prerequisites": ["core_variables_primitives"],
+      "content": [
+        {
+          "type": "text",
+          "value": {
+            "fa": "یکی از ویژگی‌های متمایز Taleforger، حذف بار شناختی اضافی در حلقه‌های شمارشی است. شما فقط نقطه شروع، پایان و (اختیاری) اندازه گام را مشخص می‌کنید. کامپایلر بقیه را مدیریت می‌کند.",
+            "en": "One of the distinguishing features of Taleforger is the removal of extra cognitive load in counting loops. You only specify the start, end, and (optionally) step size. The compiler handles the rest.",
+            "ja": "Taleforgerの特徴の1つは、カウントループにおける余分な認知的負荷の除去です。開始、終了、および（オプションで）ステップサイズを指定するだけです。コンパイラが残りを処理します。",
+            "ru": "Одной из отличительных особенностей Taleforger является устранение дополнительной когнитивной нагрузки в счетных циклах. Вы указываете только начало, конец и (при желании) размер шага. Компилятор обрабатывает остальное."
+          }
+        },
+        {
+          "type": "code",
+          "lang": "taleforger",
+          "value": {
+            "fa": "// گام مشخص (نزولی)\nبرای (عدد i = 10; i > 0; گام 2) {\n    چاپ(i);\n}\n\n// گام هوشمند (خالی = تشخیص خودکار جهت و گام 1)\nبرای (عدد i = 0; i < 4;) {\n    چاپ(\"  i = \" + i);\n}\n\n// گام مشخص (صعودی)\nبرای (عدد i = 34; i > 3; گام 3) {\n    چاپ(\"  مقدار i = \" + i);\n}",
+            "en": "// Explicit step (descending)\nfor (int i = 10; i > 0; step 2) {\n    print(i);\n}\n\n// Smart step (empty = auto-detect direction and step 1)\nfor (int i = 0; i < 4;) {\n    print(\"  i = \" + i);\n}\n\n// Explicit step (ascending logic handled by compiler)\nfor (int i = 34; i > 3; step 3) {\n    print(\"  value i = \" + i);\n}",
+            "ja": "// 明示的なステップ（降順）\nのために (整数 i = 10; i > 0; ステップ 2) {\n    表示(i);\n}\n\n// スマートステップ（空 = 方向とステップ1を自動検出）\nのために (整数 i = 0; i < 4;) {\n    表示(\"  i = \" + i);\n}\n\n// 明示的なステップ\nのために (整数 i = 34; i > 3; ステップ 3) {\n    表示(\"  値 i = \" + i);\n}",
+            "ru": "// Явный шаг (по убыванию)\nдля (цел i = 10; i > 0; шаг 2) {\n    печать(i);\n}\n\n// Умный шаг (пусто = автоопределение направления и шаг 1)\nдля (цел i = 0; i < 4;) {\n    печать(\"  i = \" + i);\n}\n\n// Явный шаг\nдля (цел i = 34; i > 3; шаг 3) {\n    печать(\"  значение i = \" + i);\n}"
+          }
+        },
+        {
+          "type": "note",
+          "style": "info",
+          "value": {
+            "fa": "چرا این بهتر است؟ در زبان‌های دیگر، اگر اشتباهاً i++ را برای یک حلقه نزولی بنویسید، برنامه وارد حلقه بی‌نهایت می‌شود. در Taleforger، کامپایلر منطق ریاضی را بررسی کرده و از این خطا جلوگیری می‌کند.",
+            "en": "Why is this better? In other languages, if you mistakenly write i++ for a descending loop, the program enters an infinite loop. In Taleforger, the compiler checks the mathematical logic and prevents this error.",
+            "ja": "なぜこれが優れているのか？他の言語では、降順ループで誤って i++ を記述すると、プログラムは無限ループに入ります。Taleforgerでは、コンパイラが数学的論理をチェックし、このエラーを防ぎます。",
+            "ru": "Почему это лучше? В других языках, если вы ошибочно напишете i++ для цикла по убыванию, программа войдет в бесконечный цикл. В Taleforger компилятор проверяет математическую логику и предотвращает эту ошибку."
+          }
+        }
+      ]
+    }
+  ]
+}

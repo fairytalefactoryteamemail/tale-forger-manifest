@@ -1,0 +1,76 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "doc_id": "core_operators_arithmetic",
+  "category": "core",
+  "topic": "operators",
+  "versions": [
+    {
+      "level": "beginner",
+      "family": "i_c",
+      "core": "operators",
+      "type": "arithmetic",
+      "min_version": "0.1.0",
+      "max_version": "0.4.1",
+      "title": {
+        "fa": "عملگرهای ریاضی",
+        "en": "Arithmetic Operators",
+        "ja": "算術演算子",
+        "ru": "Арифметические операторы"
+      },
+      "quick_tips": {
+        "fa": [
+          "عملگرهای اصلی شامل: جمع (+)، تفریق (-)، ضرب (*) و تقسیم (/) هستند.",
+          "عملگر + علاوه بر جمع اعداد، برای الحاق (چسباندن) رشته‌ها نیز استفاده می‌شود.",
+          "اولویت عملگرها دقیقاً مشابه زبان‌های استاندارد (ضرب و تقسیم قبل از جمع و تفریق) است."
+        ],
+        "en": [
+          "Main operators include: addition (+), subtraction (-), multiplication (*), and division (/).",
+          "The + operator is also used for string concatenation, in addition to numeric addition.",
+          "Operator precedence strictly follows standard rules (multiplication and division before addition and subtraction)."
+        ],
+        "ja": [
+          "主な演算子: 加算 (+)、減算 (-)、乗算 (*)、除算 (/)。",
+          "+ 演算子は、数値の加算に加えて、文字列の連結にも使用されます。",
+          "演算子の優先順位は、標準的なルール（加算・減算より前に乗算・除算）に厳密に従います。"
+        ],
+        "ru": [
+          "Основные операторы: сложение (+), вычитание (-), умножение (*) и деление (/).",
+          "Оператор + также используется для конкатенации строк, помимо числового сложения.",
+          "Приоритет операторов строго следует стандартным правилам (умножение и деление перед сложением и вычитанием)."
+        ]
+      },
+      "prerequisites": ["core_variables_primitives"],
+      "content": [
+        {
+          "type": "text",
+          "value": {
+            "fa": "عملگرهای ریاضی در Taleforger به شما اجازه می‌دهند محاسبات را به ساده‌ترین شکل ممکن انجام دهید. رفتار این عملگرها بسته به نوع داده (عدد یا رشته) هوشمندانه تغییر می‌کند.",
+            "en": "Arithmetic operators in Taleforger allow you to perform calculations in the simplest way possible. The behavior of these operators changes intelligently based on the data type (number or string).",
+            "ja": "Taleforgerの算術演算子を使用すると、可能な限り簡単な方法で計算を実行できます。これらの演算子の動作は、データ型（数値または文字列）に基づいてインテリジェントに変化します。",
+            "ru": "Арифметические операторы в Taleforger позволяют выполнять вычисления максимально простым способом. Поведение этих операторов интеллектуально меняется в зависимости от типа данных (число или строка)."
+          }
+        },
+        {
+          "type": "code",
+          "lang": "taleforger",
+          "value": {
+            "fa": "عدد شعاع = 7;\nاعشار مساحت = 3.14 * شعاع * شعاع;\n\nچاپ(\"مساحت دایره: \" + مساحت);\n\n// الحاق رشته با عملگر جمع\nرشته نام = \"امیر\";\nرشته پیام = \"کاربر \" + نام + \" وارد شد.\";\nچاپ(پیام);",
+            "en": "int radius = 7;\nfloat area = 3.14 * radius * radius;\n\nprint(\"Circle area: \" + area);\n\n// String concatenation with addition operator\nstring name = \"Amir\";\nstring message = \"User \" + name + \" logged in.\";\nprint(message);",
+            "ja": "整数 radius = 7;\n浮動 area = 3.14 * radius * radius;\n\n表示(\"円の面積: \" + area);\n\n// 加算演算子による文字列連結\n文字列 name = \"Amir\";\n文字列 message = \"ユーザー \" + name + \" がログインしました。\";\n表示(message);",
+            "ru": "цел radius = 7;\nвещ area = 3.14 * radius * radius;\n\nпечать(\"Площадь круга: \" + area);\n\n// Конкатенация строк с помощью оператора сложения\nстр name = \"Amir\";\nстр message = \"Пользователь \" + name + \" вошел в систему.\";\nпечать(message);"
+          }
+        },
+        {
+          "type": "note",
+          "style": "info",
+          "value": {
+            "fa": "در حال حاضر عملگرهای افزایشی تک‌دستوری مانند ++ یا -- پشتیبانی نمی‌شوند تا خوانایی کد حفظ شود. به جای آن، از فرم استاندارد `متغیر = متغیر + 1` استفاده کنید.",
+            "en": "Currently, unary increment operators like ++ or -- are not supported to maintain code readability. Instead, use the standard form `variable = variable + 1`.",
+            "ja": "現在、コードの可読性を維持するために、++ や -- などの単項インクリメント演算子はサポートされていません。代わりに、標準的な形式 `variable = variable + 1` を使用してください。",
+            "ru": "В настоящее время унарные операторы инкремента, такие как ++ или --, не поддерживаются для сохранения читаемости кода. Вместо этого используйте стандартную форму `переменная = переменная + 1`."
+          }
+        }
+      ]
+    }
+  ]
+}

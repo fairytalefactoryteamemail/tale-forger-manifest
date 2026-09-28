@@ -1,0 +1,94 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "doc_id": "core_functions_global",
+  "category": "core",
+  "topic": "functions",
+  "versions": [
+    {
+      "level": "intermediate",
+      "family": "i_c",
+      "core": "functions",
+      "type": "global_function",
+      "min_version": "0.1.0",
+      "max_version": "0.4.1",
+      "title": {
+        "fa": "توابع سراسری و بازگشت مقدار",
+        "en": "Global Functions & Return Values",
+        "ja": "グローバル関数と戻り値",
+        "ru": "Глобальные функции и возврат значений"
+      },
+      "quick_tips": {
+        "fa": [
+          "توابع سراسری با کلمه کلیدی `تابع` (یا `func`) تعریف می‌شوند.",
+          "ورودی‌های تابع باید دارای نوع داده مشخص باشند.",
+          "نوع داده خروجی تابع با استفاده از علامت `->` قبل از بلوک کد مشخص می‌شود.",
+          "برای بازگرداندن مقدار از کلمه کلیدی `برگردان` (یا `return`) استفاده کنید.",
+          "تابع سراسری `طول()` برای دریافت اندازه رشته‌ها و لیست‌ها در دسترس است."
+        ],
+        "en": [
+          "Global functions are defined using the `func` keyword.",
+          "Function arguments must have explicitly defined data types.",
+          "The return type of the function is specified using the `->` symbol before the code block.",
+          "Use the `return` keyword to output a value from the function.",
+          "The global `length()` function is available to retrieve the size of strings and lists."
+        ],
+        "ja": [
+          "グローバル関数は `func` キーワードを使用して定義されます。",
+          "関数の引数には、明示的に定義されたデータ型が必要です。",
+          "関数の戻り値の型は、コードブロックの前に `->` 記号を使用して指定されます。",
+          "関数から値を出力するには、`return` キーワードを使用します。",
+          "文字列やリストのサイズを取得するために、グローバル関数 `length()` が利用可能です。"
+        ],
+        "ru": [
+          "Глобальные функции определяются с помощью ключевого слова `функ` (или `func`).",
+          "Аргументы функции должны иметь явно определенные типы данных.",
+          "Тип возврата функции указывается с помощью символа `->` перед блоком кода.",
+          "Используйте ключевое слово `возврат` (или `return`) для вывода значения из функции.",
+          "Глобальная функция `длина()` доступна для получения размера строк и списков."
+        ]
+      },
+      "prerequisites": ["core_variables_primitives", "core_operators_arithmetic", "core_collections_lists"],
+      "content": [
+        {
+          "type": "text",
+          "value": {
+            "fa": "توابع سراسری به شما اجازه می‌دهند بلوک‌های کد قابل استفاده مجدد را تعریف کنید که ورودی می‌گیرند، پردازش می‌کنند و یک نتیجه مشخص برمی‌گردانند.",
+            "en": "Global functions allow you to define reusable blocks of code that take inputs, process them, and return a specific result.",
+            "ja": "グローバル関数を使用すると、入力を受け取り、処理して、特定の結果を返す、再利用可能なコードブロックを定義できます。",
+            "ru": "Глобальные функции позволяют определять повторно используемые блоки кода, которые принимают входные данные, обрабатывают их и возвращают конкретный результат."
+          }
+        },
+        {
+          "type": "code",
+          "lang": "taleforger",
+          "value": {
+            "fa": "تابع square(عدد n) -> عدد {\n    برگردان n * n;\n}\n\nچاپ(square(4));          // خروجی: 16\nچاپ(square(10));         // خروجی: 100",
+            "en": "func square(int n) -> int {\n    return n * n;\n}\n\nprint(square(4));          // Output: 16\nprint(square(10));         // Output: 100",
+            "ja": "関数 square(整数 n) -> 整数 {\n    返す n * n;\n}\n\n表示(square(4));          // 出力: 16\n表示(square(10));         // 出力: 100",
+            "ru": "функ square(цел n) -> цел {\n    возврат n * n;\n}\n\nпечать(square(4));          // Вывод: 16\nпечать(square(10));         // Вывод: 100"
+          }
+        },
+        {
+          "type": "code",
+          "lang": "taleforger",
+          "value": {
+            "fa": "رشته text = \"سلام دنیا\";\nعدد lenText = طول(text);\nچاپ(\"طول متن: \" + lenText);  // خروجی: 10\n\nlist items = [\"سیب\", \"موز\"];\nچاپ(\"طول لیست: \" + طول(items)); // خروجی: 2",
+            "en": "string text = \"Hello World\";\nint lenText = length(text);\nprint(\"Text length: \" + lenText);  // Output: 11\n\nlist items = [\"Apple\", \"Banana\"];\nprint(\"List length: \" + length(items)); // Output: 2",
+            "ja": "文字列 text = \"こんにちは世界\";\n整数 lenText = length(text);\n表示(\"テキストの長さ: \" + lenText);  // 出力: 7\n\nリスト items = [\"りんご\", \"バナナ\"];\n表示(\"リストの長さ: \" + length(items)); // 出力: 2",
+            "ru": "строка text = \"Привет мир\";\nцел lenText = длина(text);\nпечать(\"Длина текста: \" + lenText);  // Вывод: 10\n\nсписок items = [\"Яблоко\", \"Банан\"];\nпечать(\"Длина списка: \" + длина(items)); // Вывод: 2"
+          }
+        },
+        {
+          "type": "note",
+          "style": "info",
+          "value": {
+            "fa": "اگر تابعی مقداری را برنمی‌گرداند (مانند توابعی که فقط چاپ می‌کنند)، در نسخه‌های آینده سینتکس `-> void` یا حذف فلش بازگشتی پشتیبانی خواهد شد.",
+            "en": "If a function does not return a value (like functions that only print), the `-> void` syntax or omission of the return arrow will be supported in future versions.",
+            "ja": "関数が値を返さない場合（出力のみを行う関数など）、将来のバージョンでは `-> void` 構文または戻り矢印の省略がサポートされます。",
+            "ru": "Если функция не возвращает значение (например, функции, которые только печатают), синтаксис `-> void` или опускание стрелки возврата будет поддерживаться в будущих версиях."
+          }
+        }
+      ]
+    }
+  ]
+}
